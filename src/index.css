@@ -1,68 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Six+Caps&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+    --bck-r: rgba(95, 2, 2, 1);
+    --bck-b: rgba(253, 246, 240, 1);
+    --fontStyle: 'Playfair Display', serif;
+    --bxshdw: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    width: 100svw;
+    height: 100vh;
+    background-color: var(--bck-r);
+    font-family: var(--fontStyle);
+    overflow-x: hidden;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+#root {
+    width: 100%;
+    height: 100%;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+header {
+    background-color: var(--bck-r);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--fontStyle);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+header>a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.separeHeader {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.separeHeader>a,
+.separeHeader>p {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 2px;
+}
+
+.separeHeader img {
+    height: 80px;
+}
+
+#landingDiv {
+    background-color: var(--bck-r);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+}
+
+#landingDiv>div:nth-child(1) {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: end;
+    font-family: var(--fontStyle);
+    text-transform: uppercase;
+    font-size: 480%;
+}
+
+#landingDiv>div:nth-child(1)>h1,
+#landingDiv>div:nth-child(1)>h2 {
+    color: var(--bck-b);
+    font-weight: 500;
+}
+
+#landingDiv>div:nth-child(2) {
+    width: 40%;
+    margin-left: 15%;
+    height: 90%;
+    font-family: var(--fontStyle);
+    text-transform: uppercase;
+    font-size: 480%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#landingDiv>div:nth-child(2)>img {
+    border-radius: 5px;
+}
+
+#big-img-landing,
+#small-img-landing {
+    width: 50%;
+}
+
+#big-img-landing {
+    position: relative;
+    width: 60%;
+    bottom: 10px;
+}
+
+#small-img-landing {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    width: 40%;
+}
+
+#bestMenu {
+    background-color: var(--bck-b);
+    height: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleTemplate {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 150%;
+    text-transform: uppercase;
+}
+
+.titleTemplate>img {
+    height: 60%;
+}
+
+#bestMenu>div:nth-child(2) {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+}
+
+#bestMenu>div:nth-child(2)>.card {
+    background-color: white;
+    width: 30%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-img {
+    height: 80%;
+}
+
+#bestMenu>div:nth-child(2)>.card>div {
+    background-color: white;
+    box-shadow: var(--bxshdw);
+    border-radius: 5px;
+    padding: 2%;
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#bestMenu>div:nth-child(2)>.card>div>p {
+    font-size: large;
+}
+
+.card>div>h3 {
+    font-size: 350%;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+#aboutUs {
+    margin-top: 5%;
+    background-color: var(--bck-b);
+    height: 150%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#aboutUs>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    width: 90%;
+}
+
+#aboutUs>div:nth-child(2)>p {
+    font-size: 120%;
+    line-height: 3em;
+    text-align: start;
+}
+
+#aboutUs>div:nth-child(2)>img {
+    width: 40%;
+}
+
+footer {
+    margin-top: 3%;
+    height: 10%;
+    background-color: var(--bck-b);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.separeFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+footer>div:nth-child(1) {
+    margin-left: 2%
+}
+
+footer>div:nth-child(2) {
+    margin-right: 2%
+}
+
+.separeFooter img {
+    height: 80px;
+}
+
+.decoForTitle {
+    width: 10%;
+}
+
+#allRestaurants {
+    background-color: var(--bck-b);
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#allRestaurants>div:nth-child(2) {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.oneRestaurantVitrine {
+    background-color: white;
+    box-shadow: var(--bxshdw);
+    width: 25%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.vitrineImg {
+    height: 75%;
+}
+
+.btnVitrine {
+    background-color: var(--bck-r);
+    width: 45%;
+    height: 8%;
+    border-radius: 5px;
+    box-shadow: var(--bxshdw);
+    color: var(--bck-b);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+}
+
+.btnVitrine:hover {
+    background-color: black;
+}
+
+#galerie {
+    margin-top: 5%;
+    background-color: var(--bck-b);
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
