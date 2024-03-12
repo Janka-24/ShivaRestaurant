@@ -6,7 +6,7 @@ export default function NavBar() {
     return (
         <header>
             <div className="separeHeader">
-                <Link to={'/'}>
+                <Link to={'/'} id='separeHeaderFImg'>
                     <img src={imgSrc} alt="" className='logo' />
                 </Link>
             </div>
