@@ -27,9 +27,9 @@ const Home = () => {
     return (
         <>
             <section id='landingDiv'>
-                <div>
-                    <h1>shiva </h1>
-                    <h2>restaurant</h2>
+                <div >
+                    <h1 className='princTitle'>shiva </h1>
+                    <h2 className='princTitle'>restaurant</h2>
                 </div>
 
                 <Plx className="MyAwesomeParallax" parallaxData={landingImgPlx}>
@@ -39,7 +39,7 @@ const Home = () => {
             </section>
 
             <section id='bestMenu'>
-                <TitleTemplate title="nos meilleurs plats" />
+                <TitleTemplate title="nos meilleurs plats"/>
                 <div>
                     <BestCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></BestCard>
                     <BestCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></BestCard>

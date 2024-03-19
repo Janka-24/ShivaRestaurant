@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 0.95em;
+    font-size: 1em;
 }
 
 :root {
@@ -23,6 +23,10 @@ body {
 #root {
     width: 100%;
     height: 100%;
+}
+
+.princTitle {
+    font-size: 150px;
 }
 
 header {
@@ -49,13 +53,14 @@ header>a {
     align-items: center;
 }
 
-#separeHeaderFImg{
+#separeHeaderFImg {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
 }
+
 .separeHeader>a,
 .separeHeader>p {
     color: white;
@@ -132,17 +137,9 @@ header>a {
     width: 40%;
 }
 
-#bestMenu {
-    background-color: var(--bck-b);
-    height: 70%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 .titleTemplate {
     width: 100%;
-    height: 25%;
+    height: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,18 +147,28 @@ header>a {
     font-size: 150%;
     text-transform: uppercase;
 }
-.titleTemplate h2{
-    font-size: 1.7em;
-}
-.titleTemplate>img {
-    height: 60%;
-    background-color: powderblue;
 
+#bestMenu {
+    background-color: var(--bck-b);
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#bestMenu>.titleTemplate {
+    justify-content: center;
+    min-height: 25%;
+}
+
+.titleTemplate h2 {
+    font-size: 1.8em;
 }
 
 #bestMenu>div:nth-child(2) {
     width: 100%;
-    height: 60%;
+    height: 55%;
     display: flex;
     align-items: end;
     justify-content: space-evenly;
@@ -174,6 +181,11 @@ header>a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    transition: all 0.4s;
+}
+
+#bestMenu>div:nth-child(2)>.card:hover {
+    transform: translateY(-10px);
 }
 
 .card-img {
@@ -267,19 +279,21 @@ footer>div:nth-child(2) {
 }
 
 .decoForTitle {
-    width: 10%;
+    min-width: 5%;
+    max-width: 8%;
 }
 
 #allRestaurants {
     background-color: var(--bck-b);
-    height: 90%;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 #allRestaurants>div:nth-child(2) {
-    height: 80%;
+    height: 70%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -290,15 +304,24 @@ footer>div:nth-child(2) {
     background-color: white;
     box-shadow: var(--bxshdw);
     width: 25%;
-    height: 95%;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+    transition: all 0.4s;
+}
+
+.oneRestaurantVitrine:hover {
+    transform: translateY(-10px);
+}
+
+.oneRestaurantVitrine h2 {
+    font-size: 2rem;
 }
 
 .vitrineImg {
-    height: 75%;
+    height: 60%;
 }
 
 .btnVitrine {
