@@ -358,3 +358,31 @@ footer>div:nth-child(2) {
     display: flex;
     align-items: center;
 }
+
+#menuSec{
+    background-color: red;
+    height: 350%;
+}
+#menuSec>.titleTemplate{
+    height: 10%;
+
+}
+#menuContainer{
+    background-color: rebeccapurple ;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.menuCard{
+    background-color: green;
+    height: 10%;
+    width: 40%;
+}
+
+.menu-card-img{
+    height: 30%;
+}
