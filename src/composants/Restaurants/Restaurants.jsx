@@ -1,6 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Styles pour le carousel
 import imgExterior from '../../assets/exterieur.jpg';
 import imgInterior from '../../assets/interieur.jpg';
+import test01 from '../../assets/test01.jpeg';
+import test02 from '../../assets/test02.webp';
+import test03 from '../../assets/test03.jpeg';
 import imgKottu from '../../assets/kottu.jpeg';
 import imgLogo from '../../assets/logo.png';
 import svgDeco from '../../assets/deco.svg';
@@ -19,7 +24,17 @@ const Restaurants = () => {
 
             <section id='galerie'>
                 <TitleTemplate title="galerie" />
-                <Gallery />
+                <Carousel className='galleryBox'showStatus={false} transitionTime={2000} showArrows={true} showThumbs={false} autoPlay={true} interval={3000} infiniteLoop={true} >
+                    <div>
+                        <img src={test01} alt="Exterior" />
+                    </div>
+                    <div>
+                        <img src={test02} alt="Interior" />
+                    </div>
+                    <div>
+                        <img src={test03} alt="Kottu" />
+                    </div>
+                </Carousel>
             </section>
         </>
     );
@@ -42,45 +57,6 @@ const TitleTemplate = (props) => {
             <img src={svgDeco} alt="" className='decoForTitle' />
         </div>
     )
-}
-
-function Gallery() {
-    const [images, setImages] = useState([]);
-
-    useEffect(() => {
-        const fetchImages = async () => {
-            try {
-                const response = await fetch(
-                    "https://picsum.photos/v2/list?page=6&limit=35"
-                );
-                const data = await response.json();
-                setImages(data);
-            } catch (error) {
-                console.error("Error fetching images:", error);
-            }
-        };
-
-        fetchImages();
-    }, []);
-
-    return (
-        <>
-            <h1> Flexible Grid </h1>
-
-            <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-                <Masonry>
-                    {images.map((image) => (
-                        <img
-                            key={image.id}  // Corrected from {"image.id"}
-                            alt={image.author}
-                            src={image.download_url}
-                            style={{ display: "block", padding: "8px" }}
-                        />
-                    ))}
-                </Masonry>
-            </ResponsiveMasonry>
-        </>
-    );
 }
 
 export default Restaurants;
