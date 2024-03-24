@@ -12,8 +12,7 @@ export default function NavBar() {
             </div>
             <Link to={'/restaurants'}>les restaurants</Link>
             <Link to={'/menu'}>menu</Link>
-            <Link to={'/reservation'}>réservation</Link>
-            <Link to={'/services'}>où nous trouver ?</Link>
+            <Link to={'/map'}>où nous trouver ?</Link>
             <div className="separeHeader">
                 <a href="">EN</a>
                 <p>|</p>

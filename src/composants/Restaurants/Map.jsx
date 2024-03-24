@@ -5,7 +5,7 @@ import imgKottu from '../../assets/kottu.jpeg';
 import imgLogo from '../../assets/logo.png';
 import svgDeco from '../../assets/deco.svg';
 
-const Menu = () => {
+const Map = () => {
     return (
         <>
             <section id='menuSec'>
@@ -50,4 +50,4 @@ const TitleTemplate = (props) => {
         </div>
     )
 }
-export default Menu;
+export default Map;
