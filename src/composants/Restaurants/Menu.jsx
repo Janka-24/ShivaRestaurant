@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Styles pour le carousel
 import imgKottu from '../../assets/kottu.jpeg';
 import imgLogo from '../../assets/logo.png';
 import svgDeco from '../../assets/deco.svg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Menu = () => {
     return (
@@ -34,7 +36,10 @@ const Menu = () => {
 }
 
 const MenuCard = (props) => {
-    return (<div className='menuCard'>
+    useEffect(() => {
+        AOS.init({ duration: 1500 });
+    })
+    return (<div data-aos="fade-up" className='menuCard'>
         <img src={props.img} alt="" className='menu-card-img' />
         <div className='menu-card-text'>
             <h3>{props.name}</h3>

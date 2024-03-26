@@ -8,40 +8,99 @@ import svgDeco from '../../assets/deco.svg';
 const Map = () => {
     return (
         <>
-            <section id='menuSec'>
-                <TitleTemplate title="Menu" />
-                <div id="menuContainer">
-                    <MenuCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></MenuCard>
-                    <MenuCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></MenuCard>
-                    <MenuCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></MenuCard>
-                    <MenuCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></MenuCard>
-                    <MenuCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></MenuCard>
-                    <MenuCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></MenuCard>
-                    <MenuCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></MenuCard>
-                    <MenuCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></MenuCard>
-                    <MenuCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></MenuCard>
-                    <MenuCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></MenuCard>
-                    <MenuCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></MenuCard>
-                    <MenuCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></MenuCard>
-                    <MenuCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></MenuCard>
-                    <MenuCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></MenuCard>
-                    <MenuCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></MenuCard>
+            <section className='mapSec'>
+                <TitleTemplate title="Prairie" />
+                <div className='container'>
+                    <div id="timeTable">
+                        <h2>Horaire:</h2>
+                        <div>
+                            <div>
+                                <p>Lundi:</p> <span>07h00 ~ 21h00 </span>
+                            </div>
 
+                            <div>
+                                <p>Mardi:</p><span>07h00 ~ 21h00 </span>
+
+                            </div>
+                            <div>
+                                <p>Mercredi:</p><span>07h00 ~ 21h00 </span>
+                            </div>
+                            <div>
+                                <p>Jeudi:</p><span>07h00 ~ 21h00 </span>
+                            </div>
+                            <div>
+                                <p>Vendredi:</p><span>07h00 ~ 21h00 </span>
+                            </div>
+                            <div>
+                                <p>Samedi:</p><span>07h00 ~ 21h00 </span>
+                            </div>
+                            <div>
+                                <p>Dimanche:</p><span>07h00 ~ 21h00 </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="mapDiv">
+                        <iframe id='mapPra' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11044.2713735474!2d6.108605047376533!3d46.20910537506288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c65b0d93b7f9b%3A0x461f541b0849b969!2sShiva%20Restaurant!5e0!3m2!1sfr!2sch!4v1711441744690!5m2!1sfr!2sch" style={{ border: '0' }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div>
+                            <p>Rue Tronchin 14, 1202 Genève</p>
+                            <a href={'https://www.google.com/maps/place/Shiva+Restaurant/@46.209958,6.134444,14z/data=!4m6!3m5!1s0x478c65b0d93b7f9b:0x461f541b0849b969!8m2!3d46.2099578!4d6.1344436!16s%2Fg%2F11fjzkdpk4?hl=fr&entry=ttu'} className='btnMap btnVitrine'>S'y rendre</a>
+                        </div>
+                    </div>
                 </div>
+
+            </section>
+
+
+            <section className='mapSec'>
+                <TitleTemplate title="Jonction" />
+                <div className='container'>
+                    <div id="timeTable">
+                        <h2>Horaire:</h2>
+                        <div>
+                            <div>
+                                <p>Lundi:</p> <span>07h00 ~ 21h00 </span>
+                            </div>
+
+                            <div>
+                                <p>Mardi:</p><span>07h00 ~ 21h00 </span>
+
+                            </div>
+                            <div>
+                                <p>Mercredi:</p><span>07h00 ~ 21h00 </span>
+                            </div>
+                            <div>
+                                <p>Jeudi:</p><span>07h00 ~ 21h00 </span>
+                            </div>
+                            <div>
+                                <p>Vendredi:</p><span>07h00 ~ 21h00 </span>
+                            </div>
+                            <div>
+                                <p>Samedi:</p><span>07h00 ~ 21h00 </span>
+                            </div>
+                            <div>
+                                <p>Dimanche:</p><span>07h00 ~ 21h00 </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="mapDiv">
+                        <iframe id='mapPra' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11044.2713735474!2d6.108605047376533!3d46.20910537506288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64d2e6a42beb%3A0x32a0a8306906b3b!2sShiva%20Restaurant%20Jonction!5e0!3m2!1sfr!2sch!4v1711443527118!5m2!1sfr!2sch" style={{ border: '0' }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div>
+                            <p>Rue du Vélodrome 14, 1205 Genève</p>
+                            <a href={'https://maps.app.goo.gl/RTZmizRYNiuUYY669'} className='btnMap btnVitrine'>S'y rendre</a>
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </>
     );
 }
 
-const MenuCard = (props) => {
-    return (<div className='menuCard'>
-        <img src={props.img} alt="" className='menu-card-img' />
-        <div className='menu-card-text'>
-            <h3>{props.name}</h3>
-            <p>{props.description}</p>
-        </div>
-    </div>)
-}
+
 const TitleTemplate = (props) => {
     return (
         <div className='titleTemplate'>

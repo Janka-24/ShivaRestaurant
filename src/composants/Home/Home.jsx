@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import imgExterior from '../../assets/exterieur.jpg';
 import imgInterior from '../../assets/interieur.jpg';
 import imgKottu from '../../assets/kottu.jpeg';
 import imgLogo from '../../assets/logo.png';
 import svgDeco from '../../assets/deco.svg';
 import Plx from "react-plx";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 // Table pour effet
@@ -58,10 +60,6 @@ const Home = () => {
                     </p>
 
                     <img src={imgLogo} alt="" srcset="" />
-
-                    <p>
-                        Citation: "fsdfdsjfskhjfjkhhjgfksdjhfjdkshjfdhgljkghfdjhgjlk dh ghdfjghk jgh jhd jghdf"
-                    </p>
                 </div>
             </section >
         </>
@@ -76,7 +74,10 @@ const TitleTemplate = (props) => {
 }
 
 const BestCard = (props) => {
-    return (<div className='card'>
+    useEffect(() => {
+        AOS.init({duration: 2000});
+    } )
+    return (<div data-aos="fade-up" className='card'>
         <img src={props.img} alt="" className='card-img' />
         <div>
             <h3>{props.name}</h3>
