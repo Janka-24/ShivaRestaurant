@@ -10,7 +10,7 @@ export default function Footer() {
                 &copy; shiva restaurant
             </div>
             <div>
-                2023
+                2024
             </div>
         </footer>
     )
