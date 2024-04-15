@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-size: 1em;
+    box-sizing: border-box;
 }
 
 :root {
@@ -225,20 +226,23 @@ header>a {
 #aboutUs {
     margin-top: 5%;
     background-color: var(--bck-b);
-    height: 150%;
+    height: 80%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: space-between;
+}
+
+#aboutUs>div:nth-child(1) {
+    height: 40%;
 }
 
 #aboutUs>div:nth-child(2) {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    height: 80%;
+    height: 60%;
     width: 90%;
 }
 
@@ -247,10 +251,6 @@ header>a {
     line-height: 3em;
     text-align: center;
     font-family: var(--fontDescription);
-}
-
-#aboutUs>div:nth-child(2)>img {
-    width: 40%;
 }
 
 footer {
@@ -514,96 +514,6 @@ footer>div:nth-child(2) {
     display: none;
 }
 
-@media screen and (max-width: 1024px) {
-    body {
-        font-size: 1em;
-    }
-    .ForPc {
-        display: none;
-    }
-    .ForIpad {
-        display: flex;
-        width: 100vw;
-        transition: all 0.8s;
-        margin-bottom: 5%;
-    }
-    .hamburger-react {
-        display: flex !important;
-        transition: all 0.8s;
-    }
-}
-
-.nav-open {
-    /* Styles pour la navigation ouverte */
-    display: flex !important;
-    flex-direction: row;
-}
-
-.nav-closed {
-    /* Styles pour la navigation fermée */
-    display: none !important;
-}
-
-#menuForBurger {
-    position: fixed;
-    width: 100vw !important;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    z-index: 15;
-    transition: all 0.8s;
-}
-
-.hamburger-react {
+#landImg_logo {
     display: none;
-    position: absolute !important;
-    z-index: 18;
-    top: 8%;
-    left: 10%;
-    width: 7% !important;
-    height: 7% !important;
-    justify-content: space-evenly !important;
-}
-
-.hamburger-react>div {
-    width: 80% !important;
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 10;
-    display: none;
-    opacity: 0;
-    transition: all 0.8s;
-}
-
-.overlay.active {
-    display: block;
-    opacity: 1;
-    overflow: hidden;
-    /* Empêche le défilement de la page */
-}
-
-body.overlay-active {
-    overflow: hidden;
-    /* Empêche le défilement du corps */
-}
-
-#menuForBurger>a {
-    color: white;
-    font-size: 200%;
-}
-
-.ForIpad.open {
-    height: 100vh;
-    transition: all 0.8s;
 }

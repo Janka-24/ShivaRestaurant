@@ -38,10 +38,13 @@ const Home = () => {
                     <img src={imgExterior} alt="" loading="lazy" id='big-img-landing' />
                     <img src={imgInterior} alt="" loading="lazy" id='small-img-landing' />
                 </Plx>
+
+                <img src={imgLogo} id='landImg_logo' />
+
             </section>
 
             <section id='bestMenu'>
-                <TitleTemplate title="nos meilleurs plats"/>
+                <TitleTemplate title="nos meilleurs plats" />
                 <div>
                     <BestCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></BestCard>
                     <BestCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></BestCard>
@@ -58,8 +61,6 @@ const Home = () => {
 
                         L'ambiance de notre restaurant est imprégnée d'une hospitalité chaleureuse, créant l'endroit idéal pour savourer des repas en famille, entre amis ou pour célébrer des moments spéciaux. Nous sommes fiers de vous offrir une expérience culinaire qui transcende les frontières, tout en vous transportant dans un voyage de saveurs exotiques à chaque bouchée. Venez nous rejoindre pour une aventure gustative inoubliable à Genève.
                     </p>
-
-                    <img src={imgLogo} alt="" srcset="" />
                 </div>
             </section >
         </>
@@ -75,8 +76,8 @@ const TitleTemplate = (props) => {
 
 const BestCard = (props) => {
     useEffect(() => {
-        AOS.init({duration: 2000});
-    } )
+        AOS.init({ duration: 2000 });
+    })
     return (<div data-aos="fade-up" className='card'>
         <img src={props.img} alt="" className='card-img' />
         <div>
