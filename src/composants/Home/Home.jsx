@@ -58,8 +58,6 @@ const Home = () => {
                     <p>
                         Bienvenue à notre restaurant exotique, un joyau culinaire situé au cœur de Genève, où Saveurs de l'Inde et du Sri Lanka fusionnent pour créer une expérience gastronomique unique. Plongez dans la richesse des saveurs indiennes et sri lankaises dans un cadre chaleureux et accueillant.
                         Notre menu, une célébration des délices de l'Inde et du Sri Lanka, propose une variété de plats alléchants, allant des classiques indiens tels que le poulet tandoori et les currys aromatiques aux spécialités sri lankaises telles que le Kottu Rotti, le dosa croustillant et les idlis moelleux. Chaque plat est préparé avec soin par nos chefs talentueux, qui utilisent des ingrédients authentiques pour capturer l'essence même de ces cuisines exotiques.
-
-                        L'ambiance de notre restaurant est imprégnée d'une hospitalité chaleureuse, créant l'endroit idéal pour savourer des repas en famille, entre amis ou pour célébrer des moments spéciaux. Nous sommes fiers de vous offrir une expérience culinaire qui transcende les frontières, tout en vous transportant dans un voyage de saveurs exotiques à chaque bouchée. Venez nous rejoindre pour une aventure gustative inoubliable à Genève.
                     </p>
                 </div>
             </section >

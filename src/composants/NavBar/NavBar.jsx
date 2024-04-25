@@ -39,7 +39,7 @@ export default function NavBar() {
             </header>
 
             {/* Contenu pour les tablettes */}
-            <header className={isOpen ? 'ForIpad open' : 'ForIpad'}>
+            <header className={isOpen ? 'ForIpad ForIphone open' : 'ForIpad ForIphone'}>
                 <nav id='menuForBurger' className={isOpen ? 'nav-open' : 'nav-closed'}>
                     <Link to={'/'} onClick={handleLinkClick}>Acceuil</Link>
                     <Link to={'/restaurants'} onClick={handleLinkClick}>les restaurants</Link>
