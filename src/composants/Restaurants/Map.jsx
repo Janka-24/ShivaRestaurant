@@ -9,7 +9,7 @@ const Map = () => {
     return (
         <>
             <section className='mapSec'>
-                <TitleTemplate title="Prairie" />
+                <TitleTemplate title="Servette" />
                 <div className='container'>
                     <div id="timeTable">
                         <h2>Horaire:</h2>
@@ -100,13 +100,4 @@ const Map = () => {
     );
 }
 
-
-const TitleTemplate = (props) => {
-    return (
-        <div className='titleTemplate'>
-            <h2>{props.title}</h2>
-            <img src={svgDeco} alt="" className='decoForTitle' />
-        </div>
-    )
-}
 export default Map;

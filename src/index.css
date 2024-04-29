@@ -9,7 +9,7 @@
 
 :root {
     --bck-r: rgba(95, 2, 2, 1);
-    --bck-b: rgba(253, 246, 240, 1);
+    --bck-b: white;
     --fontStyle: 'Playfair Display', serif;
     --bxshdw: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     --fontDescription: "Montserrat", sans-serif;
@@ -21,6 +21,7 @@ body {
     background-color: var(--bck-r);
     font-family: var(--fontStyle);
     overflow-x: hidden;
+    color: #111111;
 }
 
 #root {
@@ -373,7 +374,7 @@ footer>div:nth-child(2) {
 }
 
 #menuSec {
-    height: 350%;
+    height: fit-content;
     width: 100%;
     background-color: var(--bck-b);
     display: flex;
@@ -383,27 +384,29 @@ footer>div:nth-child(2) {
 }
 
 #menuSec>.titleTemplate {
-    height: 10%;
+    height: 11em;
 }
 
-#menuContainer {
+/* #menuContainer {
     width: 70%;
-    height: 90%;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .menuCard {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 9%;
+    height: 17em;
+    margin-top: 5em;
+    margin-bottom: 2em;
     width: 45%;
     background-color: white;
     box-shadow: var(--bxshdw);
     transition: all 0.4s;
-    border-radius: 6px;
 }
 
 .menu-card-text>p {
@@ -415,9 +418,7 @@ footer>div:nth-child(2) {
 }
 
 .menu-card-img {
-    height: 80%;
-    width: auto;
-    border-radius: 6px;
+   display: none;
 }
 
 .menu-card-text {
@@ -431,7 +432,7 @@ footer>div:nth-child(2) {
 
 .menu-card-text>h3 {
     font-size: 250%;
-}
+} */
 
 .mapSec {
     background-color: var(--bck-b);
@@ -527,4 +528,72 @@ footer>div:nth-child(2) {
 
 .oneRestaurantVitrinePhone {
     display: none;
+}
+
+#menuContainer {
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.menuCard {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    height: 6em;
+    margin-top: 5em;
+    margin-bottom: 2em;
+    width: 40%;
+    transition: all 0.4s;
+}
+
+
+.c1 {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.c1>h3 {
+    width: 100%;
+    font-size: 120%;
+}
+
+.c1>h3>span {
+    z-index: 10;
+    position: relative;
+    padding-right: 5px;
+    background-color: var(--bck-b);
+
+}
+
+.c1>h3:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-image: radial-gradient(circle closest-side, #bbbbbb 99%, transparent 1%);
+    background-position: bottom;
+    background-size: 6px 3px;
+    background-repeat: repeat-x;
+    margin-top: -6px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.c2 {
+    width: 10%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120%;
 }

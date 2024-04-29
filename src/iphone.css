@@ -4,6 +4,7 @@
         padding: 0;
         font-size: 1em;
         box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
     }
 
     body {
@@ -20,6 +21,26 @@
 
     .ForIphone {
         display: flex;
+        height: 0%;
+    }
+
+    .menuCard {
+        justify-content: start;
+        background-color: transparent;
+        border: none;
+    }
+
+    .menu-card-text {
+        width: 100%;
+    }
+
+    .menu-card-img {
+        display: none;
+    }
+
+    #menuForBurger>a {
+        text-decoration: none;
+        font-size: 150%;
     }
 
     .hamburger-react {
@@ -99,20 +120,50 @@
         justify-content: space-around;
     }
 
+
+    #menuContainer {
+        width: 70%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+    }
+
     .menuCard {
-        opacity: 1 !important;
+        height: 6em;
+        width: 100%;
+    }
+
+
+    .c1 {
         width: 80%;
-        height: 10em;
-        margin-bottom: 5% !important;
+        height: 100%;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .c1>p{
+        font-size: 70%;
+    }
+    .c1>h3 {
+        width: 100%;
+        font-size: 110%;
     }
 
-    .menuCard>img {
-        width: 30%;
-        height: 8em;
+    .c1>h3>span {
+        z-index: 10;
+        position: relative;
+        padding-right: 5px;
+        background-color: var(--bck-b);
+
     }
 
-    .menuCard>.menu-card-text {
-        font-size: small;
+    .c2 {
+        font-size: 90%;
+        width: 20%;
     }
 
     .mapSec>.titleTemplate {

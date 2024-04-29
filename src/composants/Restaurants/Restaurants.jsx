@@ -6,7 +6,7 @@ import test01 from '../../assets/test01.jpeg';
 import test02 from '../../assets/test02.webp';
 import test03 from '../../assets/test03.jpeg';
 import svgDeco from '../../assets/deco.svg';
-
+import TitleTemplate from '../Title';
 const Restaurants = () => {
     return (
         <>
@@ -14,12 +14,12 @@ const Restaurants = () => {
                 <TitleTemplate title="nos restaurants" />
                 <div>
                     <RestaurantVitrine place="Jonction" img={imgExterior} link="/map" />
-                    <RestaurantVitrine place="Prairie" img={imgExterior} link="/map" />
+                    <RestaurantVitrine place="Servette" img={imgExterior} link="/map" />
                 </div>
 
                 <div>
                     <RestaurantVitrinePhone place="Jonction" img={imgExterior} link="/map" />
-                    <RestaurantVitrinePhone place="Prairie" img={imgExterior} link="/map" />
+                    <RestaurantVitrinePhone place="Servette" img={imgExterior} link="/map" />
                 </div>
             </section>
 
@@ -60,14 +60,6 @@ const RestaurantVitrinePhone = (props) => {
             </div>
             <img src={props.img} alt="image restaurant" className='vitrineImg' />
 
-        </div>
-    )
-}
-const TitleTemplate = (props) => {
-    return (
-        <div className='titleTemplate'>
-            <h2>{props.title}</h2>
-            <img src={svgDeco} alt="" className='decoForTitle' />
         </div>
     )
 }
