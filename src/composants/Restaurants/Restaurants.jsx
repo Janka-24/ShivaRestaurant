@@ -7,6 +7,7 @@ import test02 from '../../assets/test02.webp';
 import test03 from '../../assets/test03.jpeg';
 import svgDeco from '../../assets/deco.svg';
 import TitleTemplate from '../Title';
+
 const Restaurants = () => {
     return (
         <>

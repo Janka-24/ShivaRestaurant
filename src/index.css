@@ -597,3 +597,7 @@ footer>div:nth-child(2) {
     justify-content: center;
     font-size: 120%;
 }
+
+#hdTablet, #hdMobile{
+    display: none;
+}

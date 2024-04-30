@@ -7,6 +7,7 @@ import svgDeco from '../../assets/deco.svg';
 import Plx from "react-plx";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import TitleTemplate from '../Title';
 
 
 // Table pour effet

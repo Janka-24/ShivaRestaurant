@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 435px) and (max-width: 1024px) {
     * {
         margin: 0;
         padding: 0;
@@ -21,10 +21,6 @@
         margin-bottom: 5%;
     }
 
-    .hamburger-react {
-        display: flex !important;
-        transition: all 0.8s;
-    }
 
     #landingDiv {
         flex-direction: column;
@@ -115,9 +111,11 @@
         flex-direction: column;
         justify-content: space-around;
     }
-    .c1>p{
+
+    .c1>p {
         font-size: 100%;
     }
+
     .c1>h3 {
         width: 100%;
         font-size: 200%;
@@ -138,44 +136,53 @@
     }
 
 
+
+    #menuForBurger {
+        position: fixed;
+        width: 100vw !important;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 15;
+        transition: all 0.8s;
+        background-color: lightblue;
+    }
+
+    .hamburger-react {
+        display: flex;
+        z-index: 18;
+        top: 8%;
+        right: 10%;
+        width: 7% !important;
+        height: 7% !important;
+        justify-content: space-evenly !important;
+        background-color: lime;
+    }
+
+    .hamburger-react>div {
+        width: 80% !important;
+    }
+
+    .ForIpad.open {
+        height: 100vh;
+        transition: all 0.8s;
+    }
+
 }
 
 .nav-open {
     display: flex !important;
     flex-direction: row;
+    transition: all 0.8s;
 }
 
 .nav-closed {
     display: none !important;
-}
-
-#menuForBurger {
-    position: fixed;
-    width: 100vw !important;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    z-index: 15;
     transition: all 0.8s;
-}
-
-.hamburger-react {
-    display: none;
-    position: absolute !important;
-    z-index: 18;
-    top: 8%;
-    right: 10%;
-    width: 7% !important;
-    height: 7% !important;
-    justify-content: space-evenly !important;
-}
-
-.hamburger-react>div {
-    width: 80% !important;
 }
 
 .overlay {
@@ -195,6 +202,7 @@
     display: block;
     opacity: 1;
     overflow: hidden;
+    transition: all 0.8s;
     /* Empêche le défilement de la page */
 }
 
@@ -206,11 +214,6 @@ body.overlay-active {
 #menuForBurger>a {
     color: white;
     font-size: 200%;
-}
-
-.ForIpad.open {
-    height: 100vh;
-    transition: all 0.8s;
 }
 
 @media only screen and (max-width: 1024px) {

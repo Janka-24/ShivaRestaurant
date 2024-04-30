@@ -4,6 +4,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Styles pour l
 import imgKottu from '../../assets/kottu.jpeg';
 import imgLogo from '../../assets/logo.png';
 import svgDeco from '../../assets/deco.svg';
+import TitleTemplate from '../Title';
 
 const Map = () => {
     return (
