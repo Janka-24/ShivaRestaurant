@@ -54,7 +54,7 @@ const Home = () => {
             </section>
 
             <section id='aboutUs'>
-                <TitleTemplate title="about us" />
+                <TitleTemplate title="à propos de nous" />
                 <div className='aboutUsParagraph'>
                     <p>
                         Bienvenue à notre restaurant exotique, un joyau culinaire situé au cœur de Genève, où Saveurs de l'Inde et du Sri Lanka fusionnent pour créer une expérience gastronomique unique. Plongez dans la richesse des saveurs indiennes et sri lankaises dans un cadre chaleureux et accueillant.

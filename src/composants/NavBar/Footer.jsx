@@ -6,8 +6,7 @@ export default function Footer() {
     return (
         <footer>
             <div className="separeFooter">
-                <img src={imgSrc} alt="" className='logo' />
-                &copy; shiva restaurant
+                <p>&copy; shiva restaurant</p>
             </div>
             <div>
                 2024

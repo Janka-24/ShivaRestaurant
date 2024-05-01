@@ -7,7 +7,9 @@ import test02 from '../../assets/test02.webp';
 import test03 from '../../assets/test03.jpeg';
 import svgDeco from '../../assets/deco.svg';
 import TitleTemplate from '../Title';
-
+import { motion, useInView, useAnimation } from 'framer-motion';
+import { useRef } from 'react';
+import { useEffect } from 'react';
 const Restaurants = () => {
     return (
         <>
@@ -52,17 +54,59 @@ const RestaurantVitrine = (props) => {
     )
 }
 const RestaurantVitrinePhone = (props) => {
-    return (
-        <div className='oneRestaurantVitrinePhone'>
-            <div>
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
 
-                <h2>{props.place}</h2>
-                <a href={props.link} className='btnVitrine'>Voir en détails</a>
-            </div>
-            <img src={props.img} alt="image restaurant" className='vitrineImg' />
+    const titleControl = useAnimation();
+    const buttonControl = useAnimation();
+
+    useEffect(() => {
+        if (isInView) {
+            titleControl.start("apres");
+            buttonControl.start("apres");
+        }
+    }, [isInView]);
+
+    return (
+        <div className='oneRestaurantVitrinePhone' ref={ref}>
+            <motion.div
+                variants={{
+                    avant: { opacity: 0, x: 200 },
+                    apres: { opacity: 1, x: 0 },
+                }}
+                initial={"avant"}
+                animate={titleControl}
+                transition={{ duration: 0.5, delay: 0.25 }}
+            >
+                <img src={props.img} alt="image restaurant" className='vitrineImg' />
+                <div className='articleBoard'>
+                    <motion.div
+                        variants={{
+                            avant: { opacity: 0, y: 50 },
+                            apres: { opacity: 1, y: 0 },
+                        }}
+                        initial={"avant"}
+                        animate={titleControl}
+                        transition={{ duration: 0.5, delay: 1.0 }} // Délai plus long pour commencer après le déplacement
+                    >
+                        <h2>{props.place}</h2>
+                    </motion.div>
+                    <motion.div
+                        variants={{
+                            avant: { opacity: 0, y: 50 },
+                            apres: { opacity: 1, y: 0 },
+                        }}
+                        initial={"avant"}
+                        animate={buttonControl}
+                        transition={{ duration: 0.5, delay: 1.0 }} // Délai plus long pour commencer après le déplacement du titre
+                    >
+                        <a href={props.link} className='btnVitrine'>Voir en détails</a>
+                    </motion.div>
+                </div>
+            </motion.div>
 
         </div>
-    )
+    );
 }
 
 export default Restaurants;
