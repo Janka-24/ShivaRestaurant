@@ -20,6 +20,7 @@
 
     body {
         font-size: 1em;
+        overflow-x: hidden;
     }
 
     .ForPc {
@@ -265,13 +266,16 @@
         justify-content: start;
         border-radius: 0px;
         box-shadow: none;
-        height: 48%;
+        height: 90%;
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
 
     .oneRestaurantVitrinePhone>div>img {
         width: 100%;
         height: auto;
         border-radius: 0px;
+        overflow-x: hidden !important;
     }
 
     .articleBoard {
@@ -283,13 +287,14 @@
         justify-content: space-around;
     }
 
-    .articleBoard>div:nth-child(2){
+    .articleBoard>div:nth-child(2) {
         width: 100%;
         height: 60%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     .articleBoard>div:nth-child(2)>a {
         border-radius: 0px;
         border: 1px solid black;
@@ -312,7 +317,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
         height: 7%;
         display: flex;
         align-items: center;
@@ -332,7 +337,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
         height: 7%;
         display: flex;
         align-items: center;

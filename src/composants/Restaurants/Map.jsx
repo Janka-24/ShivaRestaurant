@@ -5,6 +5,7 @@ import imgKottu from '../../assets/kottu.jpeg';
 import imgLogo from '../../assets/logo.png';
 import svgDeco from '../../assets/deco.svg';
 import TitleTemplate from '../Title';
+import { motion } from "framer-motion";
 
 const Map = () => {
     return (
@@ -15,29 +16,27 @@ const Map = () => {
                     <div id="timeTable">
                         <h2>Horaire:</h2>
                         <div>
-                            <div>
+                            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
                                 <p>Lundi:</p> <span>07h00 ~ 21h00 </span>
-                            </div>
-
-                            <div>
-                                <p>Mardi:</p><span>07h00 ~ 21h00 </span>
-
-                            </div>
-                            <div>
-                                <p>Mercredi:</p><span>07h00 ~ 21h00 </span>
-                            </div>
-                            <div>
-                                <p>Jeudi:</p><span>07h00 ~ 21h00 </span>
-                            </div>
-                            <div>
-                                <p>Vendredi:</p><span>07h00 ~ 21h00 </span>
-                            </div>
-                            <div>
-                                <p>Samedi:</p><span>07h00 ~ 21h00 </span>
-                            </div>
-                            <div>
-                                <p>Dimanche:</p><span>07h00 ~ 21h00 </span>
-                            </div>
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                                <p>Lundi:</p> <span>07h00 ~ 21h00 </span>
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                                <p>Lundi:</p> <span>07h00 ~ 21h00 </span>
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                                <p>Lundi:</p> <span>07h00 ~ 21h00 </span>
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                                <p>Lundi:</p> <span>07h00 ~ 21h00 </span>
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                                <p>Lundi:</p> <span>07h00 ~ 21h00 </span>
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                                <p>Lundi:</p> <span>07h00 ~ 21h00 </span>
+                            </motion.div>
                         </div>
                     </div>
 
@@ -60,29 +59,27 @@ const Map = () => {
                     <div id="timeTable">
                         <h2>Horaire:</h2>
                         <div>
-                            <div>
+                            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
                                 <p>Lundi:</p> <span>07h00 ~ 21h00 </span>
-                            </div>
-
-                            <div>
-                                <p>Mardi:</p><span>07h00 ~ 21h00 </span>
-
-                            </div>
-                            <div>
-                                <p>Mercredi:</p><span>07h00 ~ 21h00 </span>
-                            </div>
-                            <div>
-                                <p>Jeudi:</p><span>07h00 ~ 21h00 </span>
-                            </div>
-                            <div>
-                                <p>Vendredi:</p><span>07h00 ~ 21h00 </span>
-                            </div>
-                            <div>
-                                <p>Samedi:</p><span>07h00 ~ 21h00 </span>
-                            </div>
-                            <div>
-                                <p>Dimanche:</p><span>07h00 ~ 21h00 </span>
-                            </div>
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                                <p>Lundi:</p> <span>07h00 ~ 21h00 </span>
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                                <p>Lundi:</p> <span>07h00 ~ 21h00 </span>
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                                <p>Lundi:</p> <span>07h00 ~ 21h00 </span>
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                                <p>Lundi:</p> <span>07h00 ~ 21h00 </span>
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                                <p>Lundi:</p> <span>07h00 ~ 21h00 </span>
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                                <p>Lundi:</p> <span>07h00 ~ 21h00 </span>
+                            </motion.div>
                         </div>
                     </div>
 

@@ -22,7 +22,7 @@ export default function TitleTemplate(props) {
                 }}
                 initial={"avant"}
                 animate={mainControl}
-                transition={{ duration: 0.5, delay: 0.25 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
             >
                 <motion.h2
                     variants={{

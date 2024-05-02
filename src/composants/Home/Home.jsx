@@ -8,6 +8,7 @@ import Plx from "react-plx";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import TitleTemplate from '../Title';
+import { motion } from "framer-motion";
 
 
 // Table pour effet
@@ -30,9 +31,9 @@ const Home = () => {
     return (
         <>
             <section id='landingDiv'>
-                <div >
-                    <h1 className='princTitle'>shiva </h1>
-                    <h2 className='princTitle'>restaurant</h2>
+                <div>
+                    <motion.h1 initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className='princTitle'>shiva</motion.h1>
+                    <motion.h2 initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4, duration: 0.6 }} className='princTitle'>restaurant</motion.h2>
                 </div>
 
                 <Plx className="MyAwesomeParallax" parallaxData={landingImgPlx}>
@@ -40,7 +41,7 @@ const Home = () => {
                     <img src={imgInterior} alt="" loading="lazy" id='small-img-landing' />
                 </Plx>
 
-                <img src={imgLogo} id='landImg_logo' />
+                <motion.img initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} transition={{ delay: 0.4, duration: 1.2 }} src={imgLogo} id='landImg_logo' />
 
             </section>
 

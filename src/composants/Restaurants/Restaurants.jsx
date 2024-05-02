@@ -5,7 +5,6 @@ import imgExterior from '../../assets/exterieur.jpg';
 import test01 from '../../assets/test01.jpeg';
 import test02 from '../../assets/test02.webp';
 import test03 from '../../assets/test03.jpeg';
-import svgDeco from '../../assets/deco.svg';
 import TitleTemplate from '../Title';
 import { motion, useInView, useAnimation } from 'framer-motion';
 import { useRef } from 'react';
@@ -28,7 +27,7 @@ const Restaurants = () => {
 
             <section id='galerie'>
                 <TitleTemplate title="galerie" />
-                <Carousel className='galleryBox' showStatus={false} transitionTime={2000} showArrows={true} showThumbs={false} autoPlay={true} interval={3000} infiniteLoop={true} >
+                <Carousel className='galleryBox' showStatus={false} transitionTime={1500} showArrows={true} showThumbs={false} autoPlay={true} interval={3000} infiniteLoop={true} >
                     <div>
                         <img src={test01} alt="Exterior" />
                     </div>
