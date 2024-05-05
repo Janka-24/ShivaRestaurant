@@ -6,32 +6,40 @@
         box-sizing: border-box;
         overflow-x: hidden !important;
     }
+
     footer>div>p {
         font-size: small;
     }
+
     body {
         font-size: 1em;
         overflow-x: hidden;
     }
+
     .ForPc {
         display: flex;
     }
+
     .ForIpad {
         display: flex;
     }
+
     .ForIphone {
         display: none;
     }
+
     header {
         justify-content: start;
         gap: 12%;
         width: 100%;
     }
+
     header>a {
         color: white;
         text-decoration: none;
         text-transform: uppercase;
     }
+
     .separeHeader {
         height: 100%;
         width: 10%;
@@ -41,16 +49,19 @@
         margin-left: 2%;
         overflow: hidden;
     }
+
     #separeHeaderFImg {
         width: 100%;
         overflow-x: hidden;
         /* aspect-ratio: 1/4; */
     }
+
     .separeHeader img {
         object-fit: scale-down;
         /* Définit un ratio carré pour l'image */
         overflow-x: hidden;
     }
+
     #landingDiv {
         background-color: var(--bck-r);
         display: flex;
@@ -60,72 +71,91 @@
         height: 70%;
         margin-top: 15%;
     }
+
     #landingDiv>div:nth-child(1) {
         width: 100%;
         height: 40%;
         padding: 7%;
         overflow: hidden;
+        font-size: 305%;
     }
+
     #landingDiv>div:nth-child(1)>h1,
     #landingDiv>div:nth-child(1)>h2 {
         overflow: hidden;
     }
+
     #landingDiv>div:nth-child(2) {
         position: initial;
         width: 100%;
         height: 60%;
         margin: 0;
     }
+
     #big-img-landing {
         width: 40%;
         bottom: 10px;
+        overflow: hidden;
     }
+
     #small-img-landing {
         right: 2em;
         width: 30%;
+        overflow: hidden;
     }
+
     .menuCard {
         justify-content: start;
         background-color: transparent;
         border: none;
         width: 100%;
     }
+
     .menu-card-text {
         width: 100%;
     }
+
     .menu-card-img {
         display: none;
     }
+
     #bestMenu {
         display: none;
     }
+
     .titleTemplate {
         font-size: 180%;
     }
+
     #aboutUs {
         height: 110%;
         justify-content: space-around;
         overflow-y: visible !important;
     }
+
     #aboutUs>.titleTemplate {
         height: 10% !important;
         font-size: 170%;
     }
+
     .aboutUsParagraph {
         height: 80% !important;
         overflow-y: auto;
         font-size: 110%;
         justify-content: center;
     }
+
     #menuSec {
         height: fit-content;
         justify-content: space-between;
     }
+
     #menuSec>.titleTemplate {
         height: 25% !important;
         margin-bottom: 8% !important;
         margin-top: 8% !important;
     }
+
     #menuContainer {
         width: 80%;
         height: fit-content;
@@ -134,6 +164,7 @@
         justify-content: space-around;
         flex-wrap: wrap;
     }
+
     .menuCard {
         height: 8em;
         width: 100%;
@@ -141,6 +172,7 @@
         align-items: center;
         justify-content: center;
     }
+
     .menuCard>div {
         display: flex;
         align-items: start;
@@ -148,6 +180,7 @@
         height: 100%;
         font-size: 150%;
     }
+
     .c1 {
         width: 80%;
         height: 100%;
@@ -156,68 +189,85 @@
         flex-direction: column;
         justify-content: space-around;
     }
+
     .c1>p {
         font-size: 80%;
         text-wrap: wrap;
     }
+
     .c1>h3 {
         width: 100%;
         font-size: 140%;
     }
+
     .c1>h3>span {
         z-index: 3;
         position: relative;
         padding-right: 5px;
         background-color: var(--bck-b);
     }
+
     .c2 {
         font-size: 120%;
         width: 10%;
         text-wrap: wrap;
     }
+
     .mapSec * {
         overflow-y: hidden;
     }
+
     .mapSec {
         height: 90%;
     }
+
     .mapSec>.titleTemplate {
         height: 5%;
         font-size: 150%;
     }
+
     .mapSec>.container {
         flex-direction: column;
         width: 80%;
     }
+
     .mapSec>.container>#timeTable {
         width: 100%;
         font-size: 100%;
         margin-bottom: 2em;
     }
+
     .mapSec>.container>#timeTable>div>div {
         width: 100%;
     }
+
     .mapSec>.container>#mapDiv {
         width: 100%;
         margin-top: 2em;
         flex-direction: column-reverse;
     }
+
     .mapSec>.container>#mapDiv>div {
         margin-bottom: 2em;
     }
+
     .btnMap {
         width: 80%;
         height: 70%;
     }
+
     #galerie {
         height: 80%;
     }
+
     .galleryBox {
         width: 90%;
     }
+
     section {
         margin-top: 0%;
     }
+
     .containerForMenu {
         width: 100%;
         height: 30%;
@@ -227,11 +277,13 @@
         justify-content: space-between;
         font-size: 150%;
     }
+
     .containerForMenu>a {
         text-decoration: none;
         color: white;
         text-transform: uppercase;
     }
+
     .containerForMenuLogo {
         width: 100%;
         height: 60%;
@@ -242,6 +294,7 @@
         padding: 5%;
         padding-bottom: 8em;
     }
+
     .containerForMenuLogo>h1,
     .containerForMenuLogo>h2 {
         color: var(--bck-b);
@@ -250,9 +303,11 @@
         font-size: 250%;
         text-transform: uppercase;
     }
+
     .oneRestaurantVitrine {
         display: none;
     }
+
     .vitrineResto {
         width: 100%;
         height: 100%;
@@ -262,19 +317,23 @@
         flex-direction: column;
         justify-content: space-around;
     }
+
     #allRestaurants {
         height: 200%;
         overflow-x: hidden;
     }
+
     #allRestaurants .titleTemplate {
         height: 10%;
         font-size: 120%;
     }
+
     #allRestaurants>div:nth-child(2) {
         display: none;
         height: 0%;
         overflow-x: hidden;
     }
+
     .oneRestaurantVitrinePhone {
         display: flex;
         width: 95%;
@@ -284,6 +343,7 @@
         box-shadow: none;
         overflow-x: hidden;
     }
+
     .oneRestaurantVitrinePhone>div {
         border-radius: 0;
         width: 100%;
@@ -293,6 +353,7 @@
         justify-content: space-around;
         overflow-x: hidden;
     }
+
     .oneRestaurantVitrinePhone>div>div {
         width: 80%;
         height: 20%;
@@ -302,11 +363,13 @@
         flex-direction: column;
         overflow-x: hidden;
     }
+
     .oneRestaurantVitrinePhone>div>div>div:nth-child(2) {
         width: 80%;
         height: 40%;
         overflow-x: hidden;
     }
+
     .oneRestaurantVitrinePhone>div>div>div:nth-child(2)>a {
         background-color: transparent;
         border: 1px solid black;
@@ -315,19 +378,24 @@
         width: 100%;
         height: 100%;
     }
+
     .oneRestaurantVitrinePhone>div>img {
         border-radius: 0;
         overflow-x: hidden;
     }
+
     body {
         overflow-x: hidden;
     }
+
     *:not(.exclude-gallery) {
         overflow-x: initial;
     }
+
     #gallery {
         background-color: initial;
     }
+
     section {
         overflow-x: hidden !important;
     }
@@ -337,6 +405,7 @@
     #allRestaurants>div:nth-child(2) {
         flex-wrap: wrap;
     }
+
     .oneRestaurantVitrine {
         width: 45%;
     }
@@ -346,6 +415,7 @@
     #allRestaurants>div:nth-child(2) {
         flex-wrap: wrap;
     }
+
     .oneRestaurantVitrine {
         width: 90%;
     }
@@ -373,9 +443,23 @@
     #galerie {
         height: 60%;
     }
+
     #menuContainer {
         align-items: center;
     }
+
+    #big-img-landing {
+        width: 40%;
+        bottom: 10px;
+        overflow: hidden;
+    }
+
+    #small-img-landing {
+        right: 2em;
+        width: 30%;
+        overflow: hidden;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
