@@ -49,7 +49,7 @@ const Home = () => {
             </section>
 
             <section id='bestMenu'>
-                <TitleTemplate title="nos meilleurs plats" />
+                <TitleTemplate title="nos spécialitées" />
                 <div>
                     <BestCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></BestCard>
                     <BestCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></BestCard>
