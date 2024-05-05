@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useEffect, useRef } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import imgExterior from '../../assets/exterieur.jpg';
@@ -7,9 +7,11 @@ import test02 from '../../assets/test02.webp';
 import test03 from '../../assets/test03.jpeg';
 import TitleTemplate from '../Title';
 import { motion, useInView, useAnimation } from 'framer-motion';
-import { useRef } from 'react';
-import { useEffect } from 'react';
+
 const Restaurants = () => {
+    useEffect(() => {
+        document.title = "Restaurants";
+    }, []);
     return (
         <>
             <section id='allRestaurants'>
@@ -70,8 +72,8 @@ const RestaurantVitrinePhone = (props) => {
         <div className='oneRestaurantVitrinePhone' ref={ref}>
             <motion.div
                 variants={{
-                    avant: { opacity: 0, x: 200 },
-                    apres: { opacity: 1, x: 0 },
+                    avant: { opacity: 0, y: 200 },
+                    apres: { opacity: 1, y: 0 },
                 }}
                 initial={"avant"}
                 animate={titleControl}

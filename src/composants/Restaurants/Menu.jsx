@@ -7,7 +7,9 @@ import TitleTemplate from '../Title';
 
 
 const Menu = () => {
-
+    useEffect(() => {
+        document.title = "Menu";
+      }, []);
     return (
         <>
             <section id='menuSec'>

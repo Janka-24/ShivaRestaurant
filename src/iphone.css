@@ -12,6 +12,7 @@
         padding: 0;
         font-size: 1em;
         box-sizing: border-box;
+        overflow-x: hidden;
     }
 
     footer>div>p {
@@ -97,6 +98,7 @@
     #aboutUs {
         height: 110%;
         justify-content: space-around;
+        overflow-y: visible !important;
     }
 
     #aboutUs>.titleTemplate {
@@ -210,99 +212,6 @@
     .btnMap {
         width: 80%;
         height: 70%;
-    }
-
-    #allRestaurants>div:nth-child(2) {
-        flex-wrap: wrap;
-    }
-
-    .oneRestaurantVitrine {
-        width: 90%;
-    }
-
-    #allRestaurants>.titleTemplate {
-        text-align: center;
-        font-size: large;
-    }
-
-    .oneRestaurantVitrinePhone {
-        display: flex;
-    }
-
-    #allRestaurants>div:nth-child(2) {
-        display: none;
-    }
-
-    #allRestaurants>div:nth-child(3) {
-        height: 80%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    #allRestaurants {
-        height: 250%;
-        justify-content: start;
-    }
-
-    #allRestaurants>.titleTemplate {
-        height: 10%;
-    }
-
-    #allRestaurants>div:nth-child(3) {
-        height: 90%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .oneRestaurantVitrinePhone {
-        width: 95%;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        border-radius: 0px;
-        box-shadow: none;
-        height: 90%;
-        overflow-y: hidden;
-        overflow-x: hidden;
-    }
-
-    .oneRestaurantVitrinePhone>div>img {
-        width: 100%;
-        height: auto;
-        border-radius: 0px;
-        overflow-x: hidden !important;
-    }
-
-    .articleBoard {
-        width: 100%;
-        height: 30%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .articleBoard>div:nth-child(2) {
-        width: 100%;
-        height: 60%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .articleBoard>div:nth-child(2)>a {
-        border-radius: 0px;
-        border: 1px solid black;
-        background-color: transparent;
-        color: #111111;
-        height: 40%;
-        width: 70%;
-        font-size: small;
     }
 
     #galerie {

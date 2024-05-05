@@ -1,4 +1,4 @@
-import React from 'react';
+import {React , useEffect} from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Styles pour le carousel
 import imgKottu from '../../assets/kottu.jpeg';
@@ -8,6 +8,9 @@ import TitleTemplate from '../Title';
 import { motion } from "framer-motion";
 
 const Map = () => {
+    useEffect(() => {
+        document.title = "Trouvé !";
+      }, []);
     return (
         <>
             <section className='mapSec'>
