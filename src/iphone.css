@@ -14,54 +14,43 @@
         box-sizing: border-box;
         overflow-x: hidden;
     }
-
     footer>div>p {
         font-size: small;
     }
-
     body {
         font-size: 1em;
         overflow-x: hidden;
     }
-
     .ForPc {
         display: none;
     }
-
     .ForIpad {
         display: none;
     }
-
     .ForIphone {
         display: flex;
         height: 100%;
     }
-
     .menuCard {
         justify-content: start;
         background-color: transparent;
         border: none;
         width: 100%;
     }
-
     .menu-card-text {
         width: 100%;
     }
-
     .menu-card-img {
         display: none;
     }
-
     #menuForBurger>a {
         text-decoration: none;
         font-size: 150%;
     }
-
     .hamburger-react {
         display: flex !important;
         transition: all 0.8s;
     }
-
     #landingDiv {
         flex-direction: column;
         align-items: center;
@@ -69,7 +58,6 @@
         justify-content: space-evenly;
         margin-top: 0 !important;
     }
-
     #landingDiv>div:nth-child(1) {
         display: flex;
         align-items: center;
@@ -77,55 +65,43 @@
         height: 35%;
         font-size: 250%;
     }
-
     #landingDiv>div>img {
         position: static;
     }
-
     #landingDiv>div:nth-child(2) {
         display: none;
     }
-
     #landImg_logo {
         display: flex;
         width: 70%;
     }
-
     #bestMenu {
         display: none;
     }
-
     #aboutUs {
         height: 110%;
         justify-content: space-around;
         overflow-y: visible !important;
     }
-
     #aboutUs>.titleTemplate {
         height: 10% !important;
         font-size: large;
     }
-
     .aboutUsParagraph {
         height: 80% !important;
         overflow-y: auto;
         font-size: 70%;
         justify-content: center;
     }
-
     #menuSec {
         height: fit-content;
         justify-content: space-between;
     }
-
     #menuSec>.titleTemplate {
         height: 25% !important;
         margin-bottom: 8% !important;
         margin-top: 8% !important;
     }
-
-
-
     #menuContainer {
         width: 80%;
         height: fit-content;
@@ -134,13 +110,15 @@
         justify-content: space-around;
         flex-wrap: wrap;
     }
-
     .menuCard {
         height: 6em;
         width: 100%;
     }
-
-
+    .menuCard>div {
+        display: flex;
+        align-items: start;
+        justify-content: end;
+    }
     .c1 {
         width: 80%;
         height: 100%;
@@ -149,79 +127,62 @@
         flex-direction: column;
         justify-content: space-around;
     }
-
     .c1>p {
         font-size: 80%;
         text-wrap: wrap;
     }
-
     .c1>h3 {
         width: 100%;
         font-size: 140%;
     }
-
     .c1>h3>span {
         z-index: 3;
         position: relative;
         padding-right: 5px;
         background-color: var(--bck-b);
-
     }
-
     .c2 {
         font-size: 120%;
         width: 20%;
         text-wrap: wrap;
     }
-
     .mapSec {
-
         height: 120%;
     }
-
     .mapSec>.titleTemplate {
-        height: 2%;
+        height: 5%;
         font-size: 110%;
     }
-
     .mapSec>.container {
         flex-direction: column;
         width: 80%;
     }
-
     .mapSec>.container>#timeTable {
         width: 100%;
         font-size: small;
         margin-bottom: 2em;
     }
-
     .mapSec>.container>#timeTable>div>div {
         width: 100%;
     }
-
     .mapSec>.container>#mapDiv {
         width: 100%;
         margin-top: 2em;
         flex-direction: column-reverse;
     }
-
     .mapSec>.container>#mapDiv>div {
         margin-bottom: 2em;
     }
-
     .btnMap {
         width: 80%;
         height: 70%;
     }
-
     #galerie {
         height: 80%;
     }
-
     .galleryBox {
         width: 90%;
     }
-
     #hdMobile {
         position: fixed;
         top: 0;
@@ -237,11 +198,9 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease-in-out;
     }
-
     #hdMobile img {
         height: 90%;
     }
-
     #hdMobileLanding {
         position: fixed;
         top: 0;
@@ -253,15 +212,12 @@
         justify-content: space-between;
         z-index: 12;
         padding: 0 2%;
-        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
         transition: all 0.3s ease-in-out;
         background-color: transparent;
     }
-
     section {
         margin-top: 20%;
     }
-
     #menuForBurger {
         position: fixed;
         width: 100vw !important;
@@ -277,7 +233,6 @@
         transition: top 1s ease !important;
         background-color: var(--bck-r) !important;
     }
-
     .hamburger-react {
         z-index: 18;
         width: 3em !important;
@@ -290,23 +245,18 @@
         justify-content: center;
         transition: all 0.8s;
     }
-
     #hdTablet {
         display: none;
     }
-
     #menuForBurger.nav-open {
         top: 0 !important;
     }
-
     .hamburger-react>div>div:nth-child(2) {
         background-color: white !important;
     }
-
     .hamburger-react>div>div>div {
         background-color: white !important;
     }
-
     .containerForMenu {
         width: 100%;
         height: 30%;
@@ -315,15 +265,12 @@
         flex-direction: column;
         justify-content: space-between;
         font-size: 150%;
-
     }
-
     .containerForMenu>a {
         text-decoration: none;
         color: white;
         text-transform: uppercase;
     }
-
     .containerForMenuLogo {
         width: 100%;
         height: 60%;
@@ -334,7 +281,6 @@
         padding: 5%;
         padding-bottom: 8em;
     }
-
     .containerForMenuLogo>h1,
     .containerForMenuLogo>h2 {
         color: var(--bck-b);
@@ -342,5 +288,95 @@
         font-family: 'Playfair Display', serif;
         font-size: 250%;
         text-transform: uppercase;
+    }
+    .oneRestaurantVitrine {
+        display: none;
+    }
+    .vitrineResto {
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #allRestaurants {
+        height: 200%;
+        overflow-x: hidden;
+    }
+    #allRestaurants .titleTemplate {
+        height: 10%;
+        font-size: 120%;
+    }
+    #allRestaurants>div:nth-child(2) {
+        display: none;
+        height: 0%;
+        overflow-x: hidden;
+    }
+    .oneRestaurantVitrinePhone {
+        display: flex;
+        width: 95%;
+        height: 45%;
+        align-items: center;
+        border-radius: 0;
+        box-shadow: none;
+        overflow-x: hidden;
+    }
+    .oneRestaurantVitrinePhone>div {
+        border-radius: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        overflow-x: hidden;
+    }
+    .oneRestaurantVitrinePhone>div>div {
+        width: 80%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    .oneRestaurantVitrinePhone>div>div>div:nth-child(2) {
+        width: 80%;
+        height: 40%;
+        overflow-x: hidden;
+    }
+    .oneRestaurantVitrinePhone>div>div>div:nth-child(2)>a {
+        background-color: transparent;
+        border: 1px solid black;
+        color: black;
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .oneRestaurantVitrinePhone>div>img {
+        border-radius: 0;
+        overflow-x: hidden;
+    }
+    *:not(.exclude-gallery) {
+        overflow-x: initial;
+    }
+    #gallery {
+        background-color: initial;
+    }
+    section {
+        overflow-x: hidden !important;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #landingDiv>div:nth-child(1) {
+        font-size: 200%;
+    }
+    .mapSec {
+        height: 150%;
+    }
+    .aboutUsParagraph>p {
+        font-size: small !important;
     }
 }

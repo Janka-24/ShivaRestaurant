@@ -21,7 +21,7 @@ const Restaurants = () => {
                     <RestaurantVitrine place="Servette" img={imgExterior} link="/map" />
                 </div>
 
-                <div>
+                <div className='vitrineResto'>
                     <RestaurantVitrinePhone place="Jonction" img={imgExterior} link="/map" />
                     <RestaurantVitrinePhone place="Servette" img={imgExterior} link="/map" />
                 </div>
@@ -29,7 +29,7 @@ const Restaurants = () => {
 
             <section id='galerie'>
                 <TitleTemplate title="galerie" />
-                <Carousel className='galleryBox' showStatus={false} transitionTime={1500} showArrows={true} showThumbs={false} autoPlay={true} interval={3000} infiniteLoop={true} >
+                <Carousel className='galleryBox exclude-gallery' showStatus={false} transitionTime={1500} showArrows={true} showThumbs={false} autoPlay={true} interval={3000} infiniteLoop={true} >
                     <div>
                         <img src={test01} alt="Exterior" />
                     </div>
@@ -41,6 +41,9 @@ const Restaurants = () => {
                     </div>
                 </Carousel>
             </section>
+
+
+
         </>
     );
 }
@@ -88,7 +91,7 @@ const RestaurantVitrinePhone = (props) => {
                         }}
                         initial={"avant"}
                         animate={titleControl}
-                        transition={{ duration: 0.5, delay: 1.0 }} // Délai plus long pour commencer après le déplacement
+                        transition={{ duration: 0.5, delay: 1.0 }}
                     >
                         <h2>{props.place}</h2>
                     </motion.div>
@@ -99,7 +102,7 @@ const RestaurantVitrinePhone = (props) => {
                         }}
                         initial={"avant"}
                         animate={buttonControl}
-                        transition={{ duration: 0.5, delay: 1.0 }} // Délai plus long pour commencer après le déplacement du titre
+                        transition={{ duration: 0.5, delay: 1.0 }}
                     >
                         <a href={props.link} className='btnVitrine'>Voir en détails</a>
                     </motion.div>

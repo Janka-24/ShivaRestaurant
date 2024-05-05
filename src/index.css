@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Six+Caps&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -387,53 +386,6 @@ footer>div:nth-child(2) {
     height: 11em;
 }
 
-/* #menuContainer {
-    width: 70%;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.menuCard {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 17em;
-    margin-top: 5em;
-    margin-bottom: 2em;
-    width: 45%;
-    background-color: white;
-    box-shadow: var(--bxshdw);
-    transition: all 0.4s;
-}
-
-.menu-card-text>p {
-    font-family: var(--fontDescription);
-}
-
-.menuCard:hover {
-    transform: translateY(-10px);
-}
-
-.menu-card-img {
-   display: none;
-}
-
-.menu-card-text {
-    height: 80%;
-    width: 65%;
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.menu-card-text>h3 {
-    font-size: 250%;
-} */
-
 .mapSec {
     background-color: var(--bck-b);
     height: 100%;
@@ -537,7 +489,6 @@ footer>div:nth-child(2) {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-
 }
 
 .menuCard {
@@ -550,7 +501,6 @@ footer>div:nth-child(2) {
     width: 40%;
     transition: all 0.4s;
 }
-
 
 .c1 {
     width: 90%;
@@ -567,11 +517,10 @@ footer>div:nth-child(2) {
 }
 
 .c1>h3>span {
-    z-index: 10;
+    z-index: 2;
     position: relative;
     padding-right: 5px;
     background-color: var(--bck-b);
-
 }
 
 .c1>h3:after {
@@ -602,4 +551,46 @@ footer>div:nth-child(2) {
 #hdMobile,
 #hdMobileLanding {
     display: none;
+}
+
+.nav-open {
+    display: flex !important;
+    flex-direction: row;
+    transition: all 0.8s;
+}
+
+.nav-closed {
+    display: none !important;
+    transition: all 0.8s;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: none;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+    overflow: hidden;
+    transition: all 0.8s;
+    /* Empêche le défilement de la page */
+}
+
+body.overlay-active {
+    overflow: hidden;
+    /* Empêche le défilement du corps */
+}
+
+#menuForBurger>a {
+    color: white;
+    font-size: 200%;
 }

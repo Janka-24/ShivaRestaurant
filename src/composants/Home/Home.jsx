@@ -28,6 +28,9 @@ const landingImgPlx = [
 ];
 
 const Home = () => {
+    useEffect(() => {
+        document.title = "Shiva";
+    }, []);
     return (
         <>
             <section id='landingDiv'>

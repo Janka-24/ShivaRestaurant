@@ -1,15 +1,14 @@
-import React, { useEffect } from 'react';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Styles pour le carousel
-import imgKottu from '../../assets/kottu.jpeg';
-import svgDeco from '../../assets/deco.svg'; import { isMobile } from 'react-device-detect';
+import React, { useEffect, useRef } from 'react';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import 'aos/dist/aos.css';
 import TitleTemplate from '../Title';
+import { motion, useInView, useAnimation } from 'framer-motion';
 
 
 const Menu = () => {
     useEffect(() => {
         document.title = "Menu";
-      }, []);
+    }, []);
     return (
         <>
             <section id='menuSec'>
@@ -43,18 +42,66 @@ const Menu = () => {
 }
 
 const MenuCard = (props) => {
-    return (
-        <div className='menuCard'>
-            <div className='c1'>
-                <h3>
-                    <span>{props.name}</span>
-                </h3>
-                <p>{props.description}</p>
 
-            </div>
-            <div className='c2'>
-                <p>{props.prix} .-</p>
-            </div>
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
+    const mainControl = useAnimation();
+    useEffect(() => {
+        if (isInView) {
+            mainControl.start("apres");
+        }
+    }, [isInView]);
+
+    return (
+        <div className='menuCard' ref={ref}>
+            <motion.div
+                variants={{
+                    avant: { opacity: 0, x: 200 },
+                    apres: { opacity: 1, x: 0 },
+                }}
+                initial={"avant"}
+                animate={mainControl}
+                transition={{ duration: 0.3, delay: 0.1 }}
+            >
+                <div className='c1'>
+                    <motion.h3
+                        variants={{
+                            avant: { opacity: 0 },
+                            apres: { opacity: 1 },
+                        }}
+                        initial={"avant"}
+                        animate={mainControl}
+                        transition={{ duration: 0.3, delay: 0.2 }}
+                    >
+                        <span>{props.name}</span>
+                    </motion.h3>
+                    <motion.p
+                        variants={{
+                            avant: { opacity: 0 },
+                            apres: { opacity: 1 },
+                        }}
+                        initial={"avant"}
+                        animate={mainControl}
+                        transition={{ duration: 0.3, delay: 0.3 }}
+                    >
+                        {props.description}
+                    </motion.p>
+                </div>
+                <div className='c2'>
+                    <motion.p
+                        variants={{
+                            avant: { opacity: 0 },
+                            apres: { opacity: 1 },
+                        }}
+                        initial={"avant"}
+                        animate={mainControl}
+                        transition={{ duration: 0.3, delay: 0.4 }}
+                    >
+                        {props.prix} .-
+                    </motion.p>
+                </div>
+            </motion.div>
         </div>
     );
 }

@@ -4,105 +4,150 @@
         padding: 0;
         font-size: 1em;
         box-sizing: border-box;
+        overflow-x: hidden !important;
     }
-
+    footer>div>p {
+        font-size: small;
+    }
     body {
         font-size: 1em;
+        overflow-x: hidden;
     }
-
     .ForPc {
-        display: none;
+        display: flex;
     }
-
     .ForIpad {
         display: flex;
-        width: 100vw;
-        transition: all 0.8s;
-        margin-bottom: 5%;
     }
-
-
-    #landingDiv {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    #landingDiv>div:nth-child(1) {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 35%;
-    }
-
-    #landingDiv>div>img {
-        position: static;
-    }
-
-    #landingDiv>div:nth-child(2) {
+    .ForIphone {
         display: none;
     }
-
-    #landImg_logo {
-        display: flex;
-        width: 70%;
+    header {
+        justify-content: start;
+        gap: 12%;
+        width: 100%;
     }
-
+    header>a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .separeHeader {
+        height: 100%;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2%;
+        overflow: hidden;
+    }
+    #separeHeaderFImg {
+        width: 100%;
+        overflow-x: hidden;
+        /* aspect-ratio: 1/4; */
+    }
+    .separeHeader img {
+        object-fit: scale-down;
+        /* Définit un ratio carré pour l'image */
+        overflow-x: hidden;
+    }
+    #landingDiv {
+        background-color: var(--bck-r);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        height: 70%;
+        margin-top: 15%;
+    }
+    #landingDiv>div:nth-child(1) {
+        width: 100%;
+        height: 40%;
+        padding: 7%;
+        overflow: hidden;
+    }
+    #landingDiv>div:nth-child(1)>h1,
+    #landingDiv>div:nth-child(1)>h2 {
+        overflow: hidden;
+    }
+    #landingDiv>div:nth-child(2) {
+        position: initial;
+        width: 100%;
+        height: 60%;
+        margin: 0;
+    }
+    #big-img-landing {
+        width: 40%;
+        bottom: 10px;
+    }
+    #small-img-landing {
+        right: 2em;
+        width: 30%;
+    }
+    .menuCard {
+        justify-content: start;
+        background-color: transparent;
+        border: none;
+        width: 100%;
+    }
+    .menu-card-text {
+        width: 100%;
+    }
+    .menu-card-img {
+        display: none;
+    }
     #bestMenu {
         display: none;
     }
-
+    .titleTemplate {
+        font-size: 180%;
+    }
     #aboutUs {
-        height: 100%;
+        height: 110%;
+        justify-content: space-around;
+        overflow-y: visible !important;
     }
-
+    #aboutUs>.titleTemplate {
+        height: 10% !important;
+        font-size: 170%;
+    }
     .aboutUsParagraph {
-        max-height: 100%;
+        height: 80% !important;
         overflow-y: auto;
+        font-size: 110%;
+        justify-content: center;
     }
-
     #menuSec {
         height: fit-content;
         justify-content: space-between;
     }
-
     #menuSec>.titleTemplate {
-        height: 30% !important;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        height: 25% !important;
+        margin-bottom: 8% !important;
+        margin-top: 8% !important;
     }
-
     #menuContainer {
-        width: 100%;
-        height: 70%;
-        flex-direction: column;
-        justify-content: center;
+        width: 80%;
+        height: fit-content;
+        display: flex;
         align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
-
-    .mapSec>.titleTemplate {
-        height: 2%;
-    }
-
-    .mapSec>.container {
-        flex-direction: column;
-        width: 80%;
-    }
-
-    .mapSec>.container>#timeTable {
-        width: 100%;
-    }
-
-    .mapSec>.container>#mapDiv {
-        width: 100%;
-    }
-
     .menuCard {
-        height: 6em;
-        width: 80%;
+        height: 8em;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-
-
+    .menuCard>div {
+        display: flex;
+        align-items: start;
+        justify-content: end;
+        height: 100%;
+        font-size: 150%;
+    }
     .c1 {
         width: 80%;
         height: 100%;
@@ -111,116 +156,187 @@
         flex-direction: column;
         justify-content: space-around;
     }
-
     .c1>p {
-        font-size: 100%;
+        font-size: 80%;
+        text-wrap: wrap;
     }
-
     .c1>h3 {
         width: 100%;
-        font-size: 200%;
+        font-size: 140%;
     }
-
     .c1>h3>span {
-        z-index: 10;
+        z-index: 3;
         position: relative;
         padding-right: 5px;
         background-color: var(--bck-b);
-
     }
-
     .c2 {
-        font-size: 150%;
-        width: 20%;
-        justify-content: end;
+        font-size: 120%;
+        width: 10%;
+        text-wrap: wrap;
     }
-
-
-
-    #menuForBurger {
-        position: fixed;
-        width: 100vw !important;
-        height: 100vh;
-        top: 0;
-        left: 0;
+    .mapSec * {
+        overflow-y: hidden;
+    }
+    .mapSec {
+        height: 90%;
+    }
+    .mapSec>.titleTemplate {
+        height: 5%;
+        font-size: 150%;
+    }
+    .mapSec>.container {
+        flex-direction: column;
+        width: 80%;
+    }
+    .mapSec>.container>#timeTable {
+        width: 100%;
+        font-size: 100%;
+        margin-bottom: 2em;
+    }
+    .mapSec>.container>#timeTable>div>div {
+        width: 100%;
+    }
+    .mapSec>.container>#mapDiv {
+        width: 100%;
+        margin-top: 2em;
+        flex-direction: column-reverse;
+    }
+    .mapSec>.container>#mapDiv>div {
+        margin-bottom: 2em;
+    }
+    .btnMap {
+        width: 80%;
+        height: 70%;
+    }
+    #galerie {
+        height: 80%;
+    }
+    .galleryBox {
+        width: 90%;
+    }
+    section {
+        margin-top: 0%;
+    }
+    .containerForMenu {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 150%;
+    }
+    .containerForMenu>a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+    .containerForMenuLogo {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        justify-content: end;
+        padding: 5%;
+        padding-bottom: 8em;
+    }
+    .containerForMenuLogo>h1,
+    .containerForMenuLogo>h2 {
+        color: var(--bck-b);
+        font-weight: 900;
+        font-family: 'Playfair Display', serif;
+        font-size: 250%;
+        text-transform: uppercase;
+    }
+    .oneRestaurantVitrine {
+        display: none;
+    }
+    .vitrineResto {
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
         display: flex;
         align-items: center;
         flex-direction: column;
-        justify-content: space-evenly;
-        z-index: 15;
-        transition: all 0.8s;
-        background-color: lightblue;
+        justify-content: space-around;
     }
-
-    .hamburger-react {
+    #allRestaurants {
+        height: 200%;
+        overflow-x: hidden;
+    }
+    #allRestaurants .titleTemplate {
+        height: 10%;
+        font-size: 120%;
+    }
+    #allRestaurants>div:nth-child(2) {
+        display: none;
+        height: 0%;
+        overflow-x: hidden;
+    }
+    .oneRestaurantVitrinePhone {
         display: flex;
-        z-index: 18;
-        top: 8%;
-        right: 10%;
-        width: 7% !important;
-        height: 7% !important;
-        justify-content: space-evenly !important;
-        background-color: lime;
+        width: 95%;
+        height: 45%;
+        align-items: center;
+        border-radius: 0;
+        box-shadow: none;
+        overflow-x: hidden;
     }
-
-    .hamburger-react>div {
-        width: 80% !important;
+    .oneRestaurantVitrinePhone>div {
+        border-radius: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        overflow-x: hidden;
     }
-
-    .ForIpad.open {
-        height: 100vh;
-        transition: all 0.8s;
+    .oneRestaurantVitrinePhone>div>div {
+        width: 80%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        overflow-x: hidden;
     }
-
-}
-
-.nav-open {
-    display: flex !important;
-    flex-direction: row;
-    transition: all 0.8s;
-}
-
-.nav-closed {
-    display: none !important;
-    transition: all 0.8s;
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 10;
-    display: none;
-    opacity: 0;
-    transition: all 0.8s;
-}
-
-.overlay.active {
-    display: block;
-    opacity: 1;
-    overflow: hidden;
-    transition: all 0.8s;
-    /* Empêche le défilement de la page */
-}
-
-body.overlay-active {
-    overflow: hidden;
-    /* Empêche le défilement du corps */
-}
-
-#menuForBurger>a {
-    color: white;
-    font-size: 200%;
+    .oneRestaurantVitrinePhone>div>div>div:nth-child(2) {
+        width: 80%;
+        height: 40%;
+        overflow-x: hidden;
+    }
+    .oneRestaurantVitrinePhone>div>div>div:nth-child(2)>a {
+        background-color: transparent;
+        border: 1px solid black;
+        color: black;
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .oneRestaurantVitrinePhone>div>img {
+        border-radius: 0;
+        overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    *:not(.exclude-gallery) {
+        overflow-x: initial;
+    }
+    #gallery {
+        background-color: initial;
+    }
+    section {
+        overflow-x: hidden !important;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
     #allRestaurants>div:nth-child(2) {
         flex-wrap: wrap;
     }
-
     .oneRestaurantVitrine {
         width: 45%;
     }
@@ -230,7 +346,6 @@ body.overlay-active {
     #allRestaurants>div:nth-child(2) {
         flex-wrap: wrap;
     }
-
     .oneRestaurantVitrine {
         width: 90%;
     }
@@ -257,6 +372,9 @@ body.overlay-active {
 @media only screen and (max-width: 1024px) {
     #galerie {
         height: 60%;
+    }
+    #menuContainer {
+        align-items: center;
     }
 }
 
