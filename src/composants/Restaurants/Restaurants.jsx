@@ -29,6 +29,7 @@ const Restaurants = () => {
 
             <section id='galerie'>
                 <TitleTemplate title="galerie" />
+
                 <Carousel className='galleryBox exclude-gallery' showStatus={false} transitionTime={1500} showArrows={true} showThumbs={false} autoPlay={true} interval={3000} infiniteLoop={true} >
                     <div>
                         <img src={test01} alt="Exterior" />
