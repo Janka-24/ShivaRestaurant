@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Six+Caps&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -580,7 +581,7 @@ body.overlay-active {
 
 .c1>h3 {
     width: 100%;
-    font-size: 120%;
+    font-size: 2em;
 }
 
 .c1>h3>span {
@@ -588,6 +589,13 @@ body.overlay-active {
     position: relative;
     padding-right: 5px;
     background-color: var(--bck-b);
+}
+
+.c1>p {
+    font-family: var(--fontDescription);
+    margin-top: 1em;
+    font-size: 1.2em;
+    text-transform: capitalize;
 }
 
 .c1>h3:after {
@@ -607,14 +615,16 @@ body.overlay-active {
 
 .c2 {
     width: 10%;
-    height: 50%;
+    height: 2.5em;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: var(--fontDescription);
-    font-size: 100%;
+    font-size: 1.5em;
+    text-wrap: nowrap;
     font-weight: 400;
 }
+
 
 .menuDiv,
 .menuDiv-reverse {
@@ -624,7 +634,7 @@ body.overlay-active {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    border-top: 8em solid var(--bck-r);
+    margin-bottom: 15em;
 }
 
 .menuDiv>div,
@@ -636,16 +646,95 @@ body.overlay-active {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 1em;
 }
 
-.menuDiv>div>img,
-.menuDiv-reverse>div>img {
+.menuCardSpecial {
+    background-color: var(--bck-r);
+    border-radius: 360%;
+    height: 25em;
+    width: 25em;
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b1 {
+    width: 100%;
+    position: relative;
+    top: 3em;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.b1>h3 {
+    color: rgb(255, 255, 255);
+    font-size: 180%;
+    margin-bottom: 2em;
+}
+
+.b1>p {
+    font-family: var(--fontDescription);
+    color: rgb(222, 222, 222);
+    width: 80%;
+}
+
+.b2 {
+    background-color: var(--bck-b);
+    position: relative;
+    top: 1em;
+    left: 70%;
+    width: 2em;
+    height: 2em;
+    font-size: 350%;
+    color: var(--bck-r);
+    border: 1px solid gray;
+    border-radius: 360%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--bxshdw);
+}
+
+.b2>p {
+    margin-bottom: 0.3em;
+    font-size: x-large;
+}
+
+#menuSec {
+    overflow-x: hidden;
+}
+
+
+.TitleMenu {
+    height: 5em !important;
+}
+
+.TitleMenu>div {
+    width: 100%;
     height: 100%;
-    position: absolute;
-    left: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-.menuDiv-reverse>div>img {
-    position: absolute;
-    left: -44%;
+.TitleMenu>div>h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    color: var(--bck-r);
+}
+
+.TitleMenu>div>p {
+    font-size: 1em;
+    font-family: var(--fontDescription);
+    text-align: center;
 }

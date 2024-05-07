@@ -58,7 +58,9 @@ export default function NavBar() {
                 <>
                     {isBiggerThan600 ? (
                         <header id='hdMobile'>
-                            <img src={imgSrc} alt="" className='logo' />
+                            <Link to={'/'} id='separeHeaderFImg'>
+                                <img src={imgSrc} alt="" className='logo' />
+                            </Link>
                             <div className={isOpen ? 'ForIphone open' : 'ForIphone'}>
                                 <nav id='menuForBurger' className={isOpen ? 'nav-open' : 'nav-closed'}>
                                     <div className='containerForMenu'>
@@ -96,7 +98,9 @@ export default function NavBar() {
                     )}
                 </>
             ) : <header id='hdMobile'>
-                <img src={imgSrc} alt="logo" className='logo' />
+                <Link to={'/'} id='separeHeaderFImg'>
+                    <img src={imgSrc} alt="" className='logo' />
+                </Link>
                 <div className={isOpen ? 'ForIphone open' : 'ForIphone'}>
                     <nav id='menuForBurger' className={isOpen ? 'nav-open' : 'nav-closed'}>
                         <div className='containerForMenu'>

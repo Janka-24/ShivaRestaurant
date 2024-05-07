@@ -1,4 +1,4 @@
-import { React, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import imgExterior from '../../assets/exterieur.jpg';
@@ -32,19 +32,16 @@ const Restaurants = () => {
 
                 <Carousel className='galleryBox exclude-gallery' showStatus={false} transitionTime={1500} showArrows={true} showThumbs={false} autoPlay={true} interval={3000} infiniteLoop={true} >
                     <div>
-                        <img src={test01} alt="Exterior" />
+                        <img src={test01} alt="Exterior" loading="lazy" />
                     </div>
                     <div>
-                        <img src={test02} alt="Interior" />
+                        <img src={test02} alt="Interior" loading="lazy" />
                     </div>
                     <div>
-                        <img src={test03} alt="Kottu" />
+                        <img src={test03} alt="Kottu" loading="lazy" />
                     </div>
                 </Carousel>
             </section>
-
-
-
         </>
     );
 }
@@ -53,11 +50,12 @@ const RestaurantVitrine = (props) => {
     return (
         <div className='oneRestaurantVitrine'>
             <h2>{props.place}</h2>
-            <img src={props.img} alt="image restaurant" className='vitrineImg' />
+            <img src={props.img} alt="image restaurant" className='vitrineImg' loading="lazy" />
             <a href={props.link} className='btnVitrine'>Voir en détails</a>
         </div>
     )
 }
+
 const RestaurantVitrinePhone = (props) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
@@ -83,7 +81,7 @@ const RestaurantVitrinePhone = (props) => {
                 animate={titleControl}
                 transition={{ duration: 0.5, delay: 0.25 }}
             >
-                <img src={props.img} alt="image restaurant" className='vitrineImg' />
+                <img src={props.img} alt="image restaurant" className='vitrineImg' loading="lazy" />
                 <div className='articleBoard'>
                     <motion.div
                         variants={{
@@ -109,7 +107,6 @@ const RestaurantVitrinePhone = (props) => {
                     </motion.div>
                 </div>
             </motion.div>
-
         </div>
     );
 }

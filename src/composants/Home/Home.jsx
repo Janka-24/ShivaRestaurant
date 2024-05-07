@@ -3,34 +3,27 @@ import imgExterior from '../../assets/exterieur.jpg';
 import imgInterior from '../../assets/interieur.jpg';
 import imgKottu from '../../assets/kottu.jpeg';
 import imgLogo from '../../assets/logo.png';
-import svgDeco from '../../assets/deco.svg';
 import Plx from "react-plx";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import TitleTemplate from '../Title';
 import { motion } from "framer-motion";
 
-
-// Table pour effet
 const landingImgPlx = [
     {
         start: 0,
         end: 900,
         duration: 900,
-        properties: [
-            {
-                startValue: 1,
-                endValue: 50,
-                property: "translateX",
-            },
-        ],
+        properties: [{ startValue: 1, endValue: 50, property: "translateX" }],
     },
 ];
 
 const Home = () => {
     useEffect(() => {
         document.title = "Shiva";
+        AOS.init({ duration: 2000 });
     }, []);
+
     return (
         <>
             <section id='landingDiv'>
@@ -39,21 +32,20 @@ const Home = () => {
                     <motion.h2 initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4, duration: 0.6 }} className='princTitle'>restaurant</motion.h2>
                 </div>
 
-                <Plx className="MyAwesomeParallax" parallaxData={landingImgPlx}>
+                <Plx id='arrt' className="MyAwesomeParallax" parallaxData={landingImgPlx}>
                     <img src={imgExterior} alt="" loading="lazy" id='big-img-landing' />
                     <img src={imgInterior} alt="" loading="lazy" id='small-img-landing' />
                 </Plx>
 
                 <motion.img initial={{ opacity: 0, rotateY: 90 }} animate={{ opacity: 1, rotateY: 0 }} transition={{ delay: 0.4, duration: 1.2 }} src={imgLogo} id='landImg_logo' />
-
             </section>
 
             <section id='bestMenu'>
-                <TitleTemplate title="nos spécialitées" />
+                <TitleTemplate title="nos spécialités" />
                 <div>
-                    <BestCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></BestCard>
-                    <BestCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></BestCard>
-                    <BestCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans"></BestCard>
+                    <BestCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans" />
+                    <BestCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans" />
+                    <BestCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans" />
                 </div>
             </section>
 
@@ -65,23 +57,19 @@ const Home = () => {
                         Notre menu, une célébration des délices de l'Inde et du Sri Lanka, propose une variété de plats alléchants, allant des classiques indiens tels que le poulet tandoori et les currys aromatiques aux spécialités sri lankaises telles que le Kottu Rotti, le dosa croustillant et les idlis moelleux. Chaque plat est préparé avec soin par nos chefs talentueux, qui utilisent des ingrédients authentiques pour capturer l'essence même de ces cuisines exotiques.
                     </p>
                 </div>
-            </section >
+            </section>
         </>
     );
 }
 
-const BestCard = (props) => {
-    useEffect(() => {
-        AOS.init({ duration: 2000 });
-    })
-    return (<div data-aos="fade-up" className='card'>
+const BestCard = (props) => (
+    <div data-aos="fade-up" className='card'>
         <img src={props.img} alt="" className='card-img' />
         <div>
             <h3>{props.name}</h3>
             <p>{props.description}</p>
         </div>
-    </div>)
-}
-
+    </div>
+);
 
 export default Home;
