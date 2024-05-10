@@ -131,9 +131,6 @@
         display: none;
     }
 
-    #bestMenu {
-        display: none;
-    }
 
     .titleTemplate {
         font-size: 180%;
@@ -280,6 +277,14 @@
         margin-top: 0%;
     }
 
+    .resaux {
+        width: 60%;
+    }
+
+    .oneResaux {
+        width: 40%;
+    }
+
     .containerForMenu {
         width: 100%;
         height: 30%;
@@ -420,6 +425,38 @@
     section {
         overflow-x: hidden !important;
     }
+
+
+    #bestMenu {
+        display: flex;
+        height: fit-content;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    #bestMenu>div:nth-child(1) {
+        height: 5em;
+    }
+
+
+    #bestMenu>div:nth-child(2) {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        gap: 5em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    #bestMenu .card {
+        width: 80% !important;
+        height: 20em !important;
+    }
+
+    #bestMenu .card>img {
+        height: 80%;
+    }
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -431,7 +468,7 @@
         width: 45%;
     }
 
-    .c2{
+    .c2 {
         font-size: 100%;
     }
 }

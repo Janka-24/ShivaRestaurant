@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import imgExterior from '../../assets/exterieur.jpg';
 import imgInterior from '../../assets/interieur.jpg';
-import imgKottu from '../../assets/kottu.jpeg';
+import imgDosa from '../../assets/dosa.jpg';
+import imgKottu from '../../assets/kottu.png';
+import imgFried from '../../assets/fried.jpg';
 import imgLogo from '../../assets/logo.png';
 import Plx from "react-plx";
 import AOS from 'aos';
@@ -43,9 +45,9 @@ const Home = () => {
             <section id='bestMenu'>
                 <TitleTemplate title="nos spécialités" />
                 <div>
-                    <BestCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans" />
-                    <BestCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans" />
-                    <BestCard img={imgKottu} name="Dosai" description="Le Lorem Ipsum est simplement du faux texte employé dans Le Lorem Ipsum est simplement du faux texte employé dans" />
+                    <BestCard img={imgDosa} name="Dosa" description="Le dosa est une crêpe à base de farine de lentilles noires, pois chiches ou de riz, typique du sud de l'Inde." />
+                    <BestCard img={imgKottu} name="Kottu" description="un plat sri lankais composé de roti haché, un plat de curry de viande de choix, accompagné d'œufs brouillés, d'oignons et de piments" />
+                    <BestCard img={imgFried} name="Fried rice" description="Le riz frit est un mets composé de riz sauté, le plus souvent mélangé à d'autres ingrédients tels qu'œufs, légumes, produits de la mer ou viande." />
                 </div>
             </section>
 

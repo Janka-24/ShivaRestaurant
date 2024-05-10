@@ -15,6 +15,14 @@
         overflow-x: hidden;
     }
 
+    .resaux {
+        width: 100%;
+    }
+
+    .oneResaux {
+        width: 50%;
+    }
+
     footer>div>p {
         font-size: small;
     }
@@ -92,7 +100,41 @@
     }
 
     #bestMenu {
-        display: none;
+        display: flex;
+        height: fit-content;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    #bestMenu>div:nth-child(1) {
+        height: 5em;
+    }
+
+
+    #bestMenu>div:nth-child(2) {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        gap: 5em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    #bestMenu .card {
+        width: 80% !important;
+        height: 15em !important;
+    }
+
+    #bestMenu .card>img {
+        height: 80%;
+    }
+
+    #bestMenu .card h3 {
+        font-size: 150%;
+    }
+
+    #bestMenu .card p {
+        font-size: 80% !important;
     }
 
     #aboutUs {
@@ -508,6 +550,20 @@
 
     .menuCardSpecial {
         width: 150%;
+    }
+
+    .titleTemplate>div>h2 {
+        font-size: 140%;
+    }
+
+    .resaux {
+        width: 80%;
+        flex-direction: row !important;
+        height: 15%;
+    }
+
+    .oneResaux {
+        width: 80%;
     }
 }
 

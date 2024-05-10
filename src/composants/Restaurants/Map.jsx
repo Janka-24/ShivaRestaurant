@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { motion } from "framer-motion";
 import TitleTemplate from '../Title';
+import fck from '../../assets/fck.png'
+import inst from '../../assets/inst.png'
 
 const locations = [
     {
@@ -43,6 +45,19 @@ const Map = () => {
             {locations.map((location, index) => (
                 <section key={index} className='mapSec'>
                     <TitleTemplate title={location.title} />
+                    <motion.div className='resaux' key={index} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+
+                        <div className='oneResaux'>
+                            <img src={fck} alt="facebookLogo" />
+                            <a href="https://www.facebook.com/Shivarestaurantgeneva/"> @Shiva Restaurant</a>
+                        </div>
+                        <div className='oneResaux'>
+                            <img src={inst} alt="instaLogo" />
+                            <a href="https://www.instagram.com/shiva_restaurant/"> @Shiva Restaurant</a>
+                        </div>
+
+                    </motion.div>
+
                     <div className='container'>
                         <div id="timeTable">
                             <h2>Horaire:</h2>

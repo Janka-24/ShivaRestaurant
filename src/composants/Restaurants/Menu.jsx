@@ -82,7 +82,29 @@ const Menu = () => {
                                 description="Nido - milk powder"
                             />
 
+                            <MenuCard
+                                prix={3.50}
+                                name="Café"
+                                description=""
+                            />
 
+                            <MenuCard
+                                prix={4.00}
+                                name="Renversé"
+                                description=""
+                            />
+
+                            <MenuCard
+                                prix={3.50}
+                                name="Thé"
+                                description=""
+                            />
+
+                            <MenuCard
+                                prix={4.00}
+                                name="Chocolat chaud"
+                                description=""
+                            />
                         </div>
                     </div>
 
