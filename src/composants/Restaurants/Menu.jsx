@@ -22,17 +22,17 @@ const Menu = () => {
                         <div> <MenuCard
                             prix={2.50}
                             name="Samosa"
-                            description="samosa aux légumes"
+                            description="Aux légumes"
                         />
                             <MenuCard
                                 prix={2.00}
                                 name="Cutlet"
-                                description="à base de thon"
+                                description="boule à base de thon"
                             />
                             <MenuCard
                                 prix={3.00}
                                 name="Roll"
-                                description="Un rouleau généreusement garni d'agneau"
+                                description="rouleau à base d’agneau et pommes de terre"
                             />
                             <MenuCard
                                 prix={2.50}
@@ -44,7 +44,7 @@ const Menu = () => {
                                 name="Soupe aux légumes"
                                 description=""
                             />
-                            <MenuCard speciale={true} prix={8.00} name="OFFRE SPÉCIALE" description="Toutes nos entrées réunies en un seul plat ! Des samosas aux vadai, accompagnés d'une soupe aux légumes. Un festin complet en une seule commande" />
+                            <MenuCard speciale={true} prix={8.00} name="OFFRE SPÉCIALE" description="Toutes nos entrées réunies en un seul plat ! Samosa, cutlet, roll et vadai" />
                         </div>
 
                     </div>
@@ -118,7 +118,7 @@ const Menu = () => {
                             <MenuCard prix={20.00} name="Thali agneau" description="" />
                             <MenuCard prix={20.00} name="Thali poisson" description="" />
                             <MenuCard prix={18.00} name="Piddu" description="à base de farine de riz et de blé" />
-                            <MenuCard prix={22.00} name="Fried rice" description="riz mélangé à du poulet, des œufs et des légumes " />
+                            <MenuCard prix={22.00} name="Fried rice" description="riz sauté aux légumes et viande de votre choix" />
                             <MenuCard prix={18.00} name="Iddiyappam" description="à base de farine de riz et de blé" />
                             <MenuCard prix={15.00} name="Idlis" description="à base de lentilles et de riz" />
                             <MenuCard speciale={true} prix={35.00} name="Grand Thali" description="rasam, yaourt, sambar, pickles indien + poisson frit/agneau/poulet ou pommes de terre frites" />
@@ -127,7 +127,7 @@ const Menu = () => {
                     </div>
 
                     <div className="menuDiv">
-                        <TitleMenu title="Dosa" description="crêpe indienne à base de lentilles et de riz" />
+                        <TitleMenu title="Dosa" description="Le dosa est une sorte de crêpe croustillante à base de lentilles et de riz" />
                         <div>
                             <MenuCard prix={15.00} name="2 sada dosas" description="" />
                             <MenuCard prix={18.00} name="Paper dosa" description="Ghee, Beurre, Fromage" />
@@ -140,7 +140,7 @@ const Menu = () => {
 
 
                     <div className="menuDiv">
-                        <TitleMenu title="Kottu" description="tout les kottus contiennent des poireaux, carottes et du chou blanc (sauf végétarien contient des poivrons en plus)" />
+                        <TitleMenu title="Kottu" description="Galettes de pain indiennes coupés en petits morceaux et mélangés avec des oeufs, légumes et viande de votre choix." />
                         <div>
                             <MenuCard prix={18.00} name="Kottu végétarien" description="" />
                             <MenuCard prix={19.00} name="Egg kottu" description="Kottu aux œufs " />

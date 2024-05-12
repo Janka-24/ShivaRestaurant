@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import TitleTemplate from '../Title';
 import fck from '../../assets/fck.png'
 import inst from '../../assets/inst.png'
+import tik from '../../assets/tik.png'
+import mail from '../../assets/mail.svg'
+import phone from '../../assets/phone.svg'
 
 const locations = [
     {
@@ -17,7 +20,8 @@ const locations = [
             { day: "Vendredi", hours: "07h00 ~ 21h00" },
             { day: "Samedi", hours: "07h00 ~ 21h00" },
             { day: "Dimanche", hours: "07h00 ~ 21h00" }
-        ]
+        ],
+        phone: "022 557 09 31"
     },
     {
         title: "Jonction",
@@ -31,7 +35,8 @@ const locations = [
             { day: "Vendredi", hours: "07h00 ~ 21h00" },
             { day: "Samedi", hours: "07h00 ~ 21h00" },
             { day: "Dimanche", hours: "07h00 ~ 21h00" }
-        ]
+        ],
+        phone: "022 321 90 46"
     }
 ];
 
@@ -55,7 +60,20 @@ const Map = () => {
                             <img src={inst} alt="instaLogo" />
                             <a href="https://www.instagram.com/shiva_restaurant/"> @Shiva Restaurant</a>
                         </div>
+                        <div className='oneResaux'>
+                            <img src={tik} alt="tiktokLogo" />
+                            <a href="https://www.tiktok.com/@shiva_restaurant"> @Shiva Restaurant</a>
+                        </div>
 
+                        <div className='oneResaux'>
+                            <img src={phone} alt="tiktokLogo" />
+                            <p>{location.phone}</p>
+                        </div>
+
+                        <div className='oneResaux' id='fMail'>
+                            <img src={mail} alt="tiktokLogo" />
+                            <p>shivageneva@gmail.com</p>
+                        </div>
                     </motion.div>
 
                     <div className='container'>

@@ -1,10 +1,14 @@
 import React, { useEffect, useRef } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import imgExterior from '../../assets/exterieur.jpg';
-import test01 from '../../assets/test01.jpeg';
-import test02 from '../../assets/test02.webp';
-import test03 from '../../assets/test03.jpeg';
+import Jonction from '../../assets/outdoor.jpeg';
+import Servette from '../../assets/outdoor.jpeg';
+import board from '../../assets/board.jpeg';
+import fun from '../../assets/fun.jpeg';
+import all from '../../assets/carousel_anim.gif';
+import god from '../../assets/god.jpeg';
+import out from '../../assets/out.jpeg';
+import servette from '../../assets/servette.jpeg';
 import TitleTemplate from '../Title';
 import { motion, useInView, useAnimation } from 'framer-motion';
 
@@ -17,28 +21,37 @@ const Restaurants = () => {
             <section id='allRestaurants'>
                 <TitleTemplate title="nos restaurants" />
                 <div>
-                    <RestaurantVitrine place="Jonction" img={imgExterior} link="/map" />
-                    <RestaurantVitrine place="Servette" img={imgExterior} link="/map" />
+                    <RestaurantVitrine place="Jonction" img={Jonction} link="/map" />
+                    <RestaurantVitrine place="Servette" img={Servette} link="/map" />
                 </div>
 
                 <div className='vitrineResto'>
-                    <RestaurantVitrinePhone place="Jonction" img={imgExterior} link="/map" />
-                    <RestaurantVitrinePhone place="Servette" img={imgExterior} link="/map" />
+                    <RestaurantVitrinePhone place="Jonction" img={Jonction} link="/map" />
+                    <RestaurantVitrinePhone place="Servette" img={Servette} link="/map" />
                 </div>
             </section>
 
             <section id='galerie'>
                 <TitleTemplate title="galerie" />
 
-                <Carousel className='galleryBox exclude-gallery' showStatus={false} transitionTime={1500} showArrows={true} showThumbs={false} autoPlay={true} interval={3000} infiniteLoop={true} >
+                <Carousel className='galleryBox exclude-gallery' showStatus={false} transitionTime={1000} showArrows={true} showThumbs={false} autoPlay={true} interval={3000} infiniteLoop={true} >
                     <div>
-                        <img src={test01} alt="Exterior" loading="lazy" />
+                        <img className='fGlr' src={all} alt="Exterior" loading="lazy" />
                     </div>
                     <div>
-                        <img src={test02} alt="Interior" loading="lazy" />
+                        <img className='fGlr' src={servette} alt="Exterior" loading="lazy" />
                     </div>
                     <div>
-                        <img src={test03} alt="Kottu" loading="lazy" />
+                        <img className='fGlr' src={out} alt="Exterior" loading="lazy" />
+                    </div>
+                    <div>
+                        <img className='fGlr' src={board} alt="Exterior" loading="lazy" />
+                    </div>
+                    <div>
+                        <img className='fGlr' src={fun} alt="Interior" loading="lazy" />
+                    </div>
+                    <div>
+                        <img className='fGlr' src={god} alt="Kottu" loading="lazy" />
                     </div>
                 </Carousel>
             </section>

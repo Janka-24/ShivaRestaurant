@@ -508,6 +508,18 @@
         font-family: var(--fontDescription);
     }
 
+    .resaux {
+        width: 80%;
+        flex-direction: row !important;
+        height: 14em !important;
+        gap: 1%;
+    }
+
+    .oneResaux {
+        width: 45%;
+        height: 3em !important;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -559,11 +571,14 @@
     .resaux {
         width: 80%;
         flex-direction: row !important;
-        height: 15%;
+        height: 170%;
+        gap: 1%;
     }
 
     .oneResaux {
-        width: 80%;
+        width: 45%;
+        height: 25%;
+        flex-direction: column;
     }
 }
 

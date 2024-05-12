@@ -222,10 +222,6 @@
         text-wrap: wrap;
     }
 
-    .mapSec * {
-        overflow-y: hidden;
-    }
-
     .mapSec {
         height: 90%;
     }
@@ -457,6 +453,21 @@
         height: 80%;
     }
 
+    .resaux {
+        width: 100%;
+        /* gap: 5%; */
+        row-gap: 1em;
+        height: 9em;
+        align-items: end;
+    }
+
+    .oneResaux {
+        width: 30%;
+    }
+
+    #fMail {
+        width: 35%;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -524,6 +535,16 @@
         right: 2em;
         width: 30%;
     }
+
+    #fMail {
+        width: 50%;
+    }
+
+    .oneResaux {
+        justify-content: center;
+        gap: 8%;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {

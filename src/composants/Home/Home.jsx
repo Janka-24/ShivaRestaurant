@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import imgExterior from '../../assets/exterieur.jpg';
-import imgInterior from '../../assets/interieur.jpg';
+import imgExterior from '../../assets/dash.jpeg';
+import imgInterior from '../../assets/indoor.jpeg';
 import imgDosa from '../../assets/dosa.jpg';
 import imgKottu from '../../assets/kottu.png';
 import imgFried from '../../assets/fried.jpg';
@@ -45,9 +45,9 @@ const Home = () => {
             <section id='bestMenu'>
                 <TitleTemplate title="nos spécialités" />
                 <div>
-                    <BestCard img={imgDosa} name="Dosa" description="Le dosa est une crêpe à base de farine de lentilles noires, pois chiches ou de riz, typique du sud de l'Inde." />
-                    <BestCard img={imgKottu} name="Kottu" description="un plat sri lankais composé de roti haché, un plat de curry de viande de choix, accompagné d'œufs brouillés, d'oignons et de piments" />
-                    <BestCard img={imgFried} name="Fried rice" description="Le riz frit est un mets composé de riz sauté, le plus souvent mélangé à d'autres ingrédients tels qu'œufs, légumes, produits de la mer ou viande." />
+                    <BestCard img={imgDosa} name="Dosa" description="Le dosa est une sorte de crêpe croustillante à base de lentilles et de riz." />
+                    <BestCard img={imgKottu} name="Kottu" description="Galettes de pain indiennes coupés en petits morceaux et mélangés avec des oeufs, légumes et viande de votre choix." />
+                    <BestCard img={imgFried} name="Fried rice" description="Riz sauté aux légumes et viande de votre choix." />
                 </div>
             </section>
 
@@ -55,8 +55,9 @@ const Home = () => {
                 <TitleTemplate title="à propos de nous" />
                 <div className='aboutUsParagraph'>
                     <p>
-                        Bienvenue à notre restaurant exotique, un joyau culinaire situé au cœur de Genève, où Saveurs de l'Inde et du Sri Lanka fusionnent pour créer une expérience gastronomique unique. Plongez dans la richesse des saveurs indiennes et sri lankaises dans un cadre chaleureux et accueillant.
-                        Notre menu, une célébration des délices de l'Inde et du Sri Lanka, propose une variété de plats alléchants, allant des classiques indiens tels que le poulet tandoori et les currys aromatiques aux spécialités sri lankaises telles que le Kottu Rotti, le dosa croustillant et les idlis moelleux. Chaque plat est préparé avec soin par nos chefs talentueux, qui utilisent des ingrédients authentiques pour capturer l'essence même de ces cuisines exotiques.
+                        Bienvenue dans le premier restaurant sri lankais et indien du Sud à offrir des dosas à Genève! Pour découvrir de nouveaux plats authentiques et vous immerger dans une autre culture à travers la nourriture nous vous proposons des plats tels que les thalis, biryanis, kotthu parotta et plus encore!
+                        Ayant commencé à proposer de la nourriture tamile dans le Shiva Restaurant de la jonction en 2012 nous avons eu le plaisir de l’étendre dans le restaurant de la Servette en 2019. Les plats sont préparés avec amour, de manière authentique pour que vous vous sentiez comme chez vous!
+                        *options vegan et viande halal
                     </p>
                 </div>
             </section>
