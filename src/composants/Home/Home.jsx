@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import imgExterior from '../../assets/dash.jpeg';
-import imgInterior from '../../assets/indoor.jpeg';
-import imgDosa from '../../assets/dosa.jpg';
-import imgKottu from '../../assets/kottu.png';
-import imgFried from '../../assets/fried.jpg';
+import imgExterior from '../../assets/dash.webp';
+import imgInterior from '../../assets/indoor.webp';
+import imgDosa from '../../assets/dosa.webp';
+import imgKottu from '../../assets/fried.webp';
+import imgFried from '../../assets/fried.webp';
 import imgLogo from '../../assets/logo.png';
 import Plx from "react-plx";
 import AOS from 'aos';

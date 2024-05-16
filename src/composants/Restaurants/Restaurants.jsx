@@ -1,14 +1,14 @@
 import React, { useEffect, useRef } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import Jonction from '../../assets/outdoor.jpeg';
-import Servette from '../../assets/outdoor.jpeg';
-import board from '../../assets/board.jpeg';
-import fun from '../../assets/fun.jpeg';
+import Jonction from '../../assets/outdoor.webp';
+import Servette from '../../assets/outdoor.webp';
+import board from '../../assets/board.webp';
+import fun from '../../assets/fun.webp';
 import all from '../../assets/carousel_anim.gif';
-import god from '../../assets/god.jpeg';
-import out from '../../assets/out.jpeg';
-import servette from '../../assets/servette.jpeg';
+import god from '../../assets/god.webp';
+import out from '../../assets/out.webp';
+import servette from '../../assets/servette.webp';
 import TitleTemplate from '../Title';
 import { motion, useInView, useAnimation } from 'framer-motion';
 

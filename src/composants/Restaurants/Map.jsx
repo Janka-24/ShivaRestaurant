@@ -13,13 +13,13 @@ const locations = [
         address: "Rue Tronchin 14, 1202 Genève",
         mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11044.2713735474!2d6.108605047376533!3d46.20910537506288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c65b0d93b7f9b%3A0x461f541b0849b969!2sShiva%20Restaurant!5e0!3m2!1sfr!2sch!4v1711441744690!5m2!1sfr!2sch",
         timetable: [
-            { day: "Lundi", hours: "07h00 ~ 21h00" },
-            { day: "Mardi", hours: "07h00 ~ 21h00" },
-            { day: "Mercredi", hours: "07h00 ~ 21h00" },
-            { day: "Jeudi", hours: "07h00 ~ 21h00" },
-            { day: "Vendredi", hours: "07h00 ~ 21h00" },
-            { day: "Samedi", hours: "07h00 ~ 21h00" },
-            { day: "Dimanche", hours: "07h00 ~ 21h00" }
+            { day: "Lundi", hours: "10:30-14:30, 17:30-22:30" },
+            { day: "Mardi", hours: "10:30-14:30, 17:30-22:30" },
+            { day: "Mercredi", hours: "10:30-14:30, 17:30-22:30" },
+            { day: "Jeudi", hours: "10:30-14:30, 17:30-22:30" },
+            { day: "Vendredi", hours: "10:30-14:30, 17:30-22:30" },
+            { day: "Samedi", hours: "10:30-14:30, 17:30-22:30" },
+            { day: "Dimanche", hours: "Fermé" }
         ],
         phone: "022 557 09 31"
     },
@@ -28,13 +28,13 @@ const locations = [
         address: "Rue du Vélodrome 14, 1205 Genève",
         mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11044.2713735474!2d6.108605047376533!3d46.20910537506288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64d2e6a42beb%3A0x32a0a8306906b3b!2sShiva%20Restaurant%20Jonction!5e0!3m2!1sfr!2sch!4v1711443527118!5m2!1sfr!2sch",
         timetable: [
-            { day: "Lundi", hours: "07h00 ~ 21h00" },
-            { day: "Mardi", hours: "07h00 ~ 21h00" },
-            { day: "Mercredi", hours: "07h00 ~ 21h00" },
-            { day: "Jeudi", hours: "07h00 ~ 21h00" },
-            { day: "Vendredi", hours: "07h00 ~ 21h00" },
-            { day: "Samedi", hours: "07h00 ~ 21h00" },
-            { day: "Dimanche", hours: "07h00 ~ 21h00" }
+            { day: "Lundi", hours: "10:30-14:30, 17:30-22:00" },
+            { day: "Mardi", hours: "10:30-14:30, 17:30-22:00" },
+            { day: "Mercredi", hours: "10:30-14:30, 17:30-22:00" },
+            { day: "Jeudi", hours: "10:30-14:30, 17:30-22:00" },
+            { day: "Vendredi", hours: "10:30-14:30, 17:30-22:00" },
+            { day: "Samedi", hours: "10:30-14:30, 17:30-22:00" },
+            { day: "Dimanche", hours: "Fermé" }
         ],
         phone: "022 321 90 46"
     }
