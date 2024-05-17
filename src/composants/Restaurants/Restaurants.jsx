@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import Jonction from '../../assets/outdoor.webp';
+import Jonction from '../../assets/jonction.webp';
 import Servette from '../../assets/outdoor.webp';
 import board from '../../assets/board.webp';
 import fun from '../../assets/fun.webp';
@@ -9,6 +9,8 @@ import all from '../../assets/carousel_anim.gif';
 import god from '../../assets/god.webp';
 import out from '../../assets/out.webp';
 import servette from '../../assets/servette.webp';
+import jct from '../../assets/jonction_outdoor.webp';
+import terrasse from '../../assets/terrasse.webp';
 import TitleTemplate from '../Title';
 import { motion, useInView, useAnimation } from 'framer-motion';
 
@@ -39,6 +41,9 @@ const Restaurants = () => {
                         <img className='fGlr' src={all} alt="Exterior" loading="lazy" />
                     </div>
                     <div>
+                        <img className='fGlr' src={jct} alt="Kottu" loading="lazy" />
+                    </div>
+                    <div>
                         <img className='fGlr' src={servette} alt="Exterior" loading="lazy" />
                     </div>
                     <div>
@@ -49,6 +54,9 @@ const Restaurants = () => {
                     </div>
                     <div>
                         <img className='fGlr' src={fun} alt="Interior" loading="lazy" />
+                    </div>
+                    <div>
+                        <img className='fGlr' src={terrasse} alt="Kottu" loading="lazy" />
                     </div>
                     <div>
                         <img className='fGlr' src={god} alt="Kottu" loading="lazy" />

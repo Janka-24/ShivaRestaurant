@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import imgExterior from '../../assets/dash.webp';
 import imgInterior from '../../assets/indoor.webp';
 import imgDosa from '../../assets/dosa.webp';
-import imgKottu from '../../assets/fried.webp';
+import imgKottu from '../../assets/kottu.webp';
 import imgFried from '../../assets/fried.webp';
 import imgLogo from '../../assets/logo.png';
 import Plx from "react-plx";
