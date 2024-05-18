@@ -6,11 +6,12 @@ import Restaurant from './composants/Restaurants/Restaurants'
 import Map from './composants/Restaurants/Map'
 import Menu from './composants/Restaurants/Menu'
 import Footer from './composants/NavBar/Footer';
-
+import ScrollToTop from './composants/ScrollToTop';
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <NavBar />
       <Routes>
         <Route path='/' element={<Home />} />

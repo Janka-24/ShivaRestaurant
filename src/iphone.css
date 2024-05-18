@@ -573,12 +573,17 @@
         flex-direction: row !important;
         height: 170%;
         gap: 1%;
+        margin-bottom: 2em;
     }
 
     .oneResaux {
-        width: 45%;
+        width: 80%;
         height: 25%;
         flex-direction: column;
+    }
+
+    #fMail{
+        width: 80%;
     }
 }
 
