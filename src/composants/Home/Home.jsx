@@ -45,9 +45,9 @@ const Home = () => {
             <section id='bestMenu'>
                 <TitleTemplate title="nos spécialités" />
                 <div>
-                    <BestCard img={imgDosa} name="Dosa" description="Le dosa est une sorte de crêpe croustillante à base de lentilles et de riz." />
-                    <BestCard img={imgKottu} name="Kottu" description="Galettes de pain indiennes coupés en petits morceaux et mélangés avec des oeufs, légumes et viande de votre choix." />
-                    <BestCard img={imgFried} name="Fried rice" description="Riz sauté aux légumes et viande de votre choix." />
+                    <BestCard img={imgDosa} name="Dosa" description="Le dosa est une crêpe croustillante faite à base de lentilles et de riz." />
+                    <BestCard img={imgKottu} name="Kottu" description="Galettes de pain indiennes coupées en petits morceaux et mélangées avec des oeufs, légumes et viande de votre choix (poulet ou agneau)." />
+                    <BestCard img={imgFried} name="Fried rice" description="Riz sauté aux légumes avec viande de votre choix (poulet ou agneau)." />
                 </div>
             </section>
 
@@ -55,8 +55,7 @@ const Home = () => {
                 <TitleTemplate title="à propos de nous" />
                 <div className='aboutUsParagraph'>
                     <p>
-                        Bienvenue dans le premier restaurant sri lankais et indien du Sud à offrir des dosas à Genève! Pour découvrir de nouveaux plats authentiques et vous immerger dans une autre culture à travers la nourriture nous vous proposons des plats tels que les thalis, biryanis, kotthu parotta et plus encore!
-                        Ayant commencé à proposer de la nourriture tamile dans le Shiva Restaurant de la jonction en 2012 nous avons eu le plaisir de l’étendre dans le restaurant de la Servette en 2019. Les plats sont préparés avec amour, de manière authentique pour que vous vous sentiez comme chez vous!
+                        Bienvenue dans le premier restaurant sri lankais et sud indien à offrir des dosas à Genève! Pour découvrir de nouveaux plats authentiques et vous immerger dans une autre culture à travers la nourriture nous vous proposons des plats tels que les thalis, biryanis, kottu parotta et plus encore!                        Ayant commencé à proposer de la nourriture tamile dans le Shiva Restaurant de la jonction en 2012 nous avons eu le plaisir de l’étendre dans le restaurant de la Servette en 2019. Les plats sont préparés avec amour, de manière authentique pour que vous vous sentiez comme chez vous!
                         *options vegan et viande halal
                     </p>
                 </div>

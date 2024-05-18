@@ -27,12 +27,12 @@ const Menu = () => {
                             <MenuCard
                                 prix={2.00}
                                 name="Cutlet"
-                                description="boule à base de thon"
+                                description="boulette à base de thon"
                             />
                             <MenuCard
                                 prix={3.00}
                                 name="Roll"
-                                description="rouleau à base d’agneau et pommes de terre"
+                                description="rouleau à base d’agneau et de pommes de terre"
                             />
                             <MenuCard
                                 prix={2.50}
@@ -140,7 +140,7 @@ const Menu = () => {
 
 
                     <div className="menuDiv">
-                        <TitleMenu title="Kottu" description="Galettes de pain indiennes coupés en petits morceaux et mélangés avec des oeufs, légumes et viande de votre choix." />
+                        <TitleMenu title="Kottu" description="Galettes de pain indiennes coupées en petits morceaux et mélangées avec des oeufs, légumes et viande de votre choix." />
                         <div>
                             <MenuCard prix={18.00} name="Kottu végétarien" description="" />
                             <MenuCard prix={19.00} name="Egg kottu" description="Kottu aux œufs " />

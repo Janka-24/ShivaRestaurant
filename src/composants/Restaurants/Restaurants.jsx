@@ -5,7 +5,7 @@ import Jonction from '../../assets/jonction.webp';
 import Servette from '../../assets/outdoor.webp';
 import board from '../../assets/board.webp';
 import fun from '../../assets/fun.webp';
-import all from '../../assets/carousel_anim.gif';
+import all from '../../assets/carousel_anim.webp';
 import god from '../../assets/god.webp';
 import out from '../../assets/out.webp';
 import servette from '../../assets/servette.webp';
